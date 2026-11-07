@@ -1,8 +1,8 @@
+failed_attempts = 0
+
 with open("auth.log") as f:
-    lines = f.readlines()
-    failed_attemps = 0
-    for line in lines:
+    for line in f:
         if "Failed password" in line:
-            failed_attemps += 1
-print(failed_attemps)
+            failed_attempts += 1
+    print(failed_attempts)
 
