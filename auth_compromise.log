@@ -1,0 +1,110 @@
+Nov  1 00:31:06 server sshd[9627]: Accepted password for anna from 192.0.2.77 port 36735 ssh2
+Nov  1 02:00:00 server sshd[3281]: Failed password for invalid user root from 203.0.113.45 port 55875 ssh2
+Nov  1 02:01:00 server sshd[8107]: Failed password for invalid user admin from 203.0.113.45 port 34747 ssh2
+Nov  1 02:01:54 server sshd[4191]: Failed password for invalid user admin from 203.0.113.45 port 53965 ssh2
+Nov  1 02:02:54 server sshd[4457]: Failed password for invalid user admin from 203.0.113.45 port 63255 ssh2
+Nov  1 02:03:04 server sshd[1458]: Failed password for invalid user admin from 203.0.113.45 port 35632 ssh2
+Nov  1 02:04:25 server sshd[5126]: Failed password for invalid user oracle from 203.0.113.45 port 34578 ssh2
+Nov  1 02:04:42 server sshd[4486]: Failed password for invalid user admin from 203.0.113.45 port 57821 ssh2
+Nov  1 02:04:47 server sshd[5799]: Failed password for invalid user postgres from 203.0.113.45 port 38113 ssh2
+Nov  1 02:06:16 server sshd[9211]: Failed password for invalid user user from 203.0.113.45 port 34054 ssh2
+Nov  1 02:06:50 server sshd[4940]: Failed password for invalid user root from 203.0.113.45 port 33052 ssh2
+Nov  1 02:08:42 server sshd[6341]: Failed password for invalid user ubuntu from 203.0.113.45 port 55996 ssh2
+Nov  1 02:09:48 server sshd[5249]: Failed password for invalid user oracle from 203.0.113.45 port 39453 ssh2
+Nov  1 02:10:27 server sshd[9918]: Failed password for invalid user postgres from 203.0.113.45 port 38727 ssh2
+Nov  1 02:10:45 server sshd[7865]: Failed password for invalid user ubuntu from 203.0.113.45 port 42312 ssh2
+Nov  1 02:12:21 server sshd[3147]: Failed password for invalid user admin from 203.0.113.45 port 50216 ssh2
+Nov  1 02:13:18 server sshd[1997]: Failed password for invalid user postgres from 203.0.113.45 port 41844 ssh2
+Nov  1 02:13:36 server sshd[6796]: Failed password for invalid user admin from 203.0.113.45 port 34114 ssh2
+Nov  1 02:16:06 server sshd[8506]: Failed password for invalid user ubuntu from 203.0.113.45 port 49677 ssh2
+Nov  1 02:16:26 server sshd[9466]: Failed password for invalid user admin from 203.0.113.45 port 43497 ssh2
+Nov  1 02:16:30 server sshd[7891]: Failed password for invalid user user from 203.0.113.45 port 64846 ssh2
+Nov  1 02:16:30 server sshd[9219]: Failed password for invalid user user from 203.0.113.45 port 45997 ssh2
+Nov  1 02:16:47 server sshd[3142]: Failed password for invalid user postgres from 203.0.113.45 port 50587 ssh2
+Nov  1 02:17:51 server sshd[9713]: Failed password for invalid user test from 203.0.113.45 port 46280 ssh2
+Nov  1 02:18:00 server sshd[3487]: Failed password for invalid user ubuntu from 203.0.113.45 port 59699 ssh2
+Nov  1 02:18:38 server sshd[9577]: Failed password for invalid user ubuntu from 203.0.113.45 port 57402 ssh2
+Nov  1 02:19:49 server sshd[9364]: Failed password for invalid user user from 203.0.113.45 port 35086 ssh2
+Nov  1 02:20:15 server sshd[1306]: Failed password for invalid user postgres from 203.0.113.45 port 52416 ssh2
+Nov  1 02:20:32 server sshd[8211]: Failed password for invalid user oracle from 203.0.113.45 port 57636 ssh2
+Nov  1 02:22:24 server sshd[4000]: Failed password for invalid user oracle from 203.0.113.45 port 52510 ssh2
+Nov  1 02:22:30 server sshd[1064]: Failed password for invalid user test from 203.0.113.45 port 34797 ssh2
+Nov  1 02:23:06 server sshd[3454]: Failed password for invalid user postgres from 203.0.113.45 port 36133 ssh2
+Nov  1 02:23:55 server sshd[3823]: Failed password for invalid user user from 203.0.113.45 port 50290 ssh2
+Nov  1 02:25:50 server sshd[3319]: Failed password for invalid user user from 203.0.113.45 port 52949 ssh2
+Nov  1 02:27:12 server sshd[8757]: Failed password for invalid user oracle from 203.0.113.45 port 34259 ssh2
+Nov  1 02:28:30 server sshd[2971]: Failed password for invalid user ubuntu from 203.0.113.45 port 50561 ssh2
+Nov  1 02:30:13 server sshd[2011]: Failed password for invalid user user from 203.0.113.45 port 55283 ssh2
+Nov  1 02:31:28 server sshd[6340]: Failed password for invalid user oracle from 203.0.113.45 port 59897 ssh2
+Nov  1 02:32:18 server sshd[9492]: Failed password for invalid user admin from 203.0.113.45 port 60257 ssh2
+Nov  1 02:33:09 server sshd[9695]: Failed password for invalid user root from 203.0.113.45 port 37673 ssh2
+Nov  1 02:36:00 server sshd[8905]: Failed password for invalid user ubuntu from 203.0.113.45 port 59205 ssh2
+Nov  1 04:21:56 server sshd[2738]: Accepted password for kamil from 192.0.2.10 port 55463 ssh2
+Nov  1 04:37:31 server sshd[1930]: Accepted password for anna from 192.0.2.77 port 31805 ssh2
+Nov  1 07:16:43 server sshd[5071]: Accepted password for kamil from 192.0.2.10 port 63923 ssh2
+Nov  1 08:01:36 server sshd[4134]: Accepted password for kamil from 192.0.2.10 port 36694 ssh2
+Nov  1 08:24:05 server sshd[5537]: Failed password for kamil from 192.0.2.10 port 40580 ssh2
+Nov  1 08:42:57 server sshd[1691]: Accepted password for kamil from 192.0.2.10 port 56259 ssh2
+Nov  1 09:14:24 server sshd[2601]: Failed password for kamil from 192.0.2.10 port 31513 ssh2
+Nov  1 09:30:24 server sshd[9318]: Accepted password for kamil from 192.0.2.10 port 63973 ssh2
+Nov  1 10:00:00 server sshd[8408]: Failed password for invalid user admin from 198.51.100.23 port 44300 ssh2
+Nov  1 10:00:54 server sshd[1456]: Failed password for invalid user test from 198.51.100.23 port 38476 ssh2
+Nov  1 10:01:45 server sshd[2038]: Failed password for kamil from 192.0.2.10 port 64619 ssh2
+Nov  1 10:01:46 server sshd[8262]: Failed password for invalid user root from 198.51.100.23 port 56076 ssh2
+Nov  1 10:02:06 server sshd[6334]: Failed password for invalid user postgres from 198.51.100.23 port 62539 ssh2
+Nov  1 10:02:08 server sshd[9282]: Failed password for invalid user root from 198.51.100.23 port 59437 ssh2
+Nov  1 10:03:30 server sshd[9391]: Failed password for invalid user ubuntu from 198.51.100.23 port 48208 ssh2
+Nov  1 10:05:40 server sshd[4267]: Failed password for invalid user admin from 198.51.100.23 port 41548 ssh2
+Nov  1 10:05:48 server sshd[5541]: Failed password for invalid user root from 198.51.100.23 port 58214 ssh2
+Nov  1 10:06:00 server sshd[8411]: Failed password for invalid user oracle from 198.51.100.23 port 41950 ssh2
+Nov  1 10:06:14 server sshd[9325]: Failed password for invalid user root from 198.51.100.23 port 45291 ssh2
+Nov  1 10:06:39 server sshd[9737]: Failed password for invalid user ubuntu from 198.51.100.23 port 48246 ssh2
+Nov  1 10:06:56 server sshd[8832]: Failed password for invalid user oracle from 198.51.100.23 port 53512 ssh2
+Nov  1 10:07:39 server sshd[9319]: Failed password for invalid user oracle from 198.51.100.23 port 45122 ssh2
+Nov  1 10:07:56 server sshd[5057]: Failed password for invalid user oracle from 198.51.100.23 port 54199 ssh2
+Nov  1 10:08:14 server sshd[9572]: Failed password for invalid user test from 198.51.100.23 port 30268 ssh2
+Nov  1 10:10:23 server sshd[5253]: Accepted password for kamil from 192.0.2.10 port 60948 ssh2
+Nov  1 10:10:51 server sshd[4319]: Failed password for invalid user root from 198.51.100.23 port 34413 ssh2
+Nov  1 10:11:00 server sshd[8332]: Failed password for invalid user oracle from 198.51.100.23 port 56243 ssh2
+Nov  1 10:12:15 server sshd[3246]: Failed password for invalid user ubuntu from 198.51.100.23 port 50880 ssh2
+Nov  1 10:12:39 server sshd[7826]: Failed password for invalid user test from 198.51.100.23 port 33445 ssh2
+Nov  1 10:13:12 server sshd[2992]: Failed password for invalid user postgres from 198.51.100.23 port 55714 ssh2
+Nov  1 10:13:12 server sshd[7428]: Failed password for invalid user oracle from 198.51.100.23 port 40636 ssh2
+Nov  1 10:13:12 server sshd[8243]: Failed password for invalid user admin from 198.51.100.23 port 39913 ssh2
+Nov  1 10:13:18 server sshd[6177]: Failed password for invalid user oracle from 198.51.100.23 port 55829 ssh2
+Nov  1 10:16:00 server sshd[2188]: Failed password for invalid user root from 198.51.100.23 port 63783 ssh2
+Nov  1 10:17:00 server sshd[4942]: Failed password for invalid user ubuntu from 198.51.100.23 port 33538 ssh2
+Nov  1 10:40:00 server sshd[8017]: Accepted password for admin from 198.51.100.23 port 36649 ssh2
+Nov  1 10:53:05 server sshd[2198]: Failed password for kamil from 192.0.2.10 port 39607 ssh2
+Nov  1 13:53:20 server sshd[4484]: Failed password for ubuntu from 198.51.100.7 port 50437 ssh2
+Nov  1 13:53:50 server sshd[5960]: Failed password for ubuntu from 198.51.100.7 port 35628 ssh2
+Nov  1 13:54:20 server sshd[3004]: Failed password for ubuntu from 198.51.100.7 port 39444 ssh2
+Nov  1 13:56:40 server sshd[3530]: Accepted password for ubuntu from 198.51.100.7 port 36696 ssh2
+Nov  1 14:24:43 server sshd[6999]: Accepted password for kamil from 192.0.2.10 port 60353 ssh2
+Nov  1 17:06:54 server sshd[3342]: Accepted password for kamil from 192.0.2.10 port 42891 ssh2
+Nov  1 17:24:16 server sshd[5146]: Accepted password for kamil from 192.0.2.10 port 41699 ssh2
+Nov  1 17:27:25 server sshd[3248]: Accepted password for kamil from 192.0.2.10 port 52544 ssh2
+Nov  1 19:13:40 server sshd[8663]: Accepted password for kamil from 192.0.2.10 port 49535 ssh2
+Nov  1 19:23:27 server sshd[4597]: Accepted password for kamil from 192.0.2.10 port 62944 ssh2
+Nov  1 21:30:38 server sshd[2542]: Accepted password for anna from 192.0.2.77 port 60497 ssh2
+Nov  1 22:16:00 server sshd[7525]: Accepted password for anna from 192.0.2.77 port 61087 ssh2
+Nov  2 03:00:00 server sshd[8983]: Failed password for root from 203.0.113.99 port 31671 ssh2
+Nov  2 03:00:22 server sshd[3667]: Failed password for root from 203.0.113.99 port 43628 ssh2
+Nov  2 03:01:12 server sshd[4665]: Failed password for root from 203.0.113.99 port 46531 ssh2
+Nov  2 03:01:18 server sshd[3645]: Failed password for root from 203.0.113.99 port 54656 ssh2
+Nov  2 03:02:04 server sshd[8070]: Failed password for root from 203.0.113.99 port 53865 ssh2
+Nov  2 03:02:18 server sshd[9447]: Failed password for root from 203.0.113.99 port 61986 ssh2
+Nov  2 03:02:55 server sshd[7616]: Failed password for root from 203.0.113.99 port 38050 ssh2
+Nov  2 03:03:58 server sshd[6556]: Failed password for root from 203.0.113.99 port 61483 ssh2
+Nov  2 03:05:30 server sshd[7902]: Accepted password for kamil from 192.0.2.10 port 40410 ssh2
+Nov  2 03:08:20 server sshd[4207]: Accepted password for root from 203.0.113.99 port 61708 ssh2
+Nov  2 05:40:35 server sshd[6842]: Accepted password for anna from 192.0.2.77 port 38584 ssh2
+Nov  2 06:04:54 server sshd[6218]: Accepted password for kamil from 192.0.2.10 port 53310 ssh2
+Nov  2 07:03:01 server sshd[2510]: Accepted password for kamil from 192.0.2.10 port 52562 ssh2
+Nov  2 07:26:27 server sshd[6995]: Accepted password for kamil from 192.0.2.10 port 61631 ssh2
+Nov  2 12:43:32 server sshd[1319]: Accepted password for kamil from 192.0.2.10 port 53896 ssh2
+Nov  2 12:56:44 server sshd[6537]: Accepted password for kamil from 192.0.2.10 port 31899 ssh2
+Nov  2 16:40:00 server sshd[8514]: Failed password for test from 192.0.2.55 port 52454 ssh2
+Nov  2 16:40:45 server sshd[8216]: Failed password for test from 192.0.2.55 port 47351 ssh2
+Nov  2 23:09:01 server sshd[1296]: Accepted password for kamil from 192.0.2.10 port 51791 ssh2
+Nov  2 23:10:19 server sshd[7297]: Accepted password for kamil from 192.0.2.10 port 44617 ssh2
