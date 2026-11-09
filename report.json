@@ -1,0 +1,44 @@
+{
+    "summary": {
+        "logfile": "auth_hydra_attack.log",
+        "compromises_count": 1,
+        "suspicious_ips_count": 3
+    },
+    "compromises": [
+        {
+            "severity": "HIGH",
+            "type": "POSSIBLE COMPROMISE",
+            "mitre": "T1078 - Valid Accounts",
+            "ip": "192.168.100.20",
+            "user": "kamil",
+            "attempts": 47,
+            "recommended_action": "sudo ufw deny from 192.168.100.20"
+        }
+    ],
+    "suspicious_activity": [
+        {
+            "severity": "MEDIUM",
+            "type": "SUSPICIOUS ACTIVITY",
+            "mitre": "T1110.001 - Password Guessing",
+            "ip": "192.168.100.31",
+            "failed_attempts": 90,
+            "recommended_action": "sudo ufw deny from 192.168.100.31"
+        },
+        {
+            "severity": "MEDIUM",
+            "type": "SUSPICIOUS ACTIVITY",
+            "mitre": "T1110.001 - Password Guessing",
+            "ip": "192.168.100.20",
+            "failed_attempts": 50,
+            "recommended_action": "sudo ufw deny from 192.168.100.20"
+        },
+        {
+            "severity": "MEDIUM",
+            "type": "SUSPICIOUS ACTIVITY",
+            "mitre": "T1110.001 - Password Guessing",
+            "ip": "203.0.113.50",
+            "failed_attempts": 14,
+            "recommended_action": "sudo ufw deny from 203.0.113.50"
+        }
+    ]
+}
