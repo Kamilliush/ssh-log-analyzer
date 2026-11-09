@@ -1,0 +1,863 @@
+Nov 08 07:58:12 ubuntuserver systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Nov 08 07:58:12 ubuntuserver sshd[1072]: Server listening on 0.0.0.0 port 22.
+Nov 08 07:58:12 ubuntuserver sshd[1072]: Server listening on :: port 22.
+Nov 08 07:58:12 ubuntuserver systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Nov 08 08:17:01 ubuntuserver CRON[1100]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 08:17:02 ubuntuserver CRON[1100]: pam_unix(cron:session): session closed for user root
+Nov 08 09:12:05 ubuntuserver sshd-session[1105]: Accepted password for kamil from 192.168.100.5 port 39955 ssh2
+Nov 08 09:12:05 ubuntuserver sshd-session[1105]: pam_unix(sshd:session): session opened for user kamil(uid=1000) by kamil(uid=0)
+Nov 08 09:12:05 ubuntuserver systemd-logind[612]: New session 1 of user kamil.
+Nov 08 09:12:05 ubuntuserver systemd[1]: Started session-1.scope - Session 1 of User kamil.
+Nov 08 09:12:30 ubuntuserver sudo[1106]: kamil : TTY=pts/0 ; PWD=/home/kamil ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 08 09:12:30 ubuntuserver sudo[1106]: pam_unix(sudo:session): session opened for user root(uid=0) by kamil(uid=1000)
+Nov 08 09:12:36 ubuntuserver sudo[1106]: pam_unix(sudo:session): session closed for user root
+Nov 08 09:17:01 ubuntuserver CRON[1110]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 09:17:02 ubuntuserver CRON[1110]: pam_unix(cron:session): session closed for user root
+Nov 08 09:37:05 ubuntuserver sshd-session[1105]: Received disconnect from 192.168.100.5 port 39955:11: disconnected by user
+Nov 08 09:37:05 ubuntuserver sshd-session[1105]: Disconnected from user kamil 192.168.100.5 port 39955
+Nov 08 09:37:05 ubuntuserver sshd-session[1105]: pam_unix(sshd:session): session closed for user kamil
+Nov 08 09:37:05 ubuntuserver systemd-logind[612]: Session 1 logged out. Waiting for processes to exit.
+Nov 08 09:37:05 ubuntuserver systemd-logind[612]: Removed session 1.
+Nov 08 10:03:00 ubuntuserver unix_chkpwd[1119]: password check failed for user (anna)
+Nov 08 10:03:00 ubuntuserver sshd-session[1118]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.40  user=anna
+Nov 08 10:03:01 ubuntuserver sshd-session[1118]: Failed password for anna from 192.168.100.40 port 48188 ssh2
+Nov 08 10:03:03 ubuntuserver sshd-session[1118]: Connection closed by authenticating user anna 192.168.100.40 port 48188 [preauth]
+Nov 08 10:03:08 ubuntuserver unix_chkpwd[1124]: password check failed for user (anna)
+Nov 08 10:03:08 ubuntuserver sshd-session[1123]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.40  user=anna
+Nov 08 10:03:09 ubuntuserver sshd-session[1123]: Failed password for anna from 192.168.100.40 port 48195 ssh2
+Nov 08 10:03:11 ubuntuserver sshd-session[1123]: Connection closed by authenticating user anna 192.168.100.40 port 48195 [preauth]
+Nov 08 10:03:16 ubuntuserver unix_chkpwd[1130]: password check failed for user (anna)
+Nov 08 10:03:16 ubuntuserver sshd-session[1129]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.40  user=anna
+Nov 08 10:03:17 ubuntuserver sshd-session[1129]: Failed password for anna from 192.168.100.40 port 48201 ssh2
+Nov 08 10:03:17 ubuntuserver sshd-session[1129]: Connection closed by authenticating user anna 192.168.100.40 port 48201 [preauth]
+Nov 08 10:03:27 ubuntuserver sshd-session[1132]: Accepted password for anna from 192.168.100.40 port 48203 ssh2
+Nov 08 10:03:27 ubuntuserver sshd-session[1132]: pam_unix(sshd:session): session opened for user anna(uid=1001) by anna(uid=0)
+Nov 08 10:03:27 ubuntuserver systemd-logind[612]: New session 5 of user anna.
+Nov 08 10:03:27 ubuntuserver systemd[1]: Started session-5.scope - Session 5 of User anna.
+Nov 08 10:17:01 ubuntuserver CRON[1138]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 10:17:02 ubuntuserver CRON[1138]: pam_unix(cron:session): session closed for user root
+Nov 08 10:33:27 ubuntuserver sshd-session[1132]: Received disconnect from 192.168.100.40 port 48203:11: disconnected by user
+Nov 08 10:33:27 ubuntuserver sshd-session[1132]: Disconnected from user anna 192.168.100.40 port 48203
+Nov 08 10:33:27 ubuntuserver sshd-session[1132]: pam_unix(sshd:session): session closed for user anna
+Nov 08 10:33:27 ubuntuserver systemd-logind[612]: Session 5 logged out. Waiting for processes to exit.
+Nov 08 10:33:27 ubuntuserver systemd-logind[612]: Removed session 5.
+Nov 08 11:05:00 ubuntuserver unix_chkpwd[1146]: password check failed for user (root)
+Nov 08 11:05:00 ubuntuserver sshd-session[1145]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50  user=root
+Nov 08 11:05:01 ubuntuserver sshd-session[1145]: Failed password for root from 203.0.113.50 port 42708 ssh2
+Nov 08 11:05:03 ubuntuserver sshd-session[1145]: Connection closed by authenticating user root 203.0.113.50 port 42708 [preauth]
+Nov 08 11:17:01 ubuntuserver CRON[1151]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 11:17:02 ubuntuserver CRON[1151]: pam_unix(cron:session): session closed for user root
+Nov 08 11:17:50 ubuntuserver sshd-session[1156]: Invalid user admin from 203.0.113.50 port 42713
+Nov 08 11:17:50 ubuntuserver sshd-session[1156]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 11:17:50 ubuntuserver sshd-session[1156]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 11:17:51 ubuntuserver sshd-session[1156]: Failed password for invalid user admin from 203.0.113.50 port 42713 ssh2
+Nov 08 11:17:52 ubuntuserver sshd-session[1156]: Connection closed by invalid user admin 203.0.113.50 port 42713 [preauth]
+Nov 08 11:26:58 ubuntuserver sshd-session[1165]: Invalid user pi from 203.0.113.50 port 42717
+Nov 08 11:26:58 ubuntuserver sshd-session[1165]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 11:26:58 ubuntuserver sshd-session[1165]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 11:27:00 ubuntuserver sshd-session[1165]: Failed password for invalid user pi from 203.0.113.50 port 42717 ssh2
+Nov 08 11:27:02 ubuntuserver sshd-session[1165]: Connection closed by invalid user pi 203.0.113.50 port 42717 [preauth]
+Nov 08 11:37:10 ubuntuserver sshd-session[1170]: Invalid user ubuntu from 203.0.113.50 port 42724
+Nov 08 11:37:10 ubuntuserver sshd-session[1170]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 11:37:10 ubuntuserver sshd-session[1170]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 11:37:11 ubuntuserver sshd-session[1170]: Failed password for invalid user ubuntu from 203.0.113.50 port 42724 ssh2
+Nov 08 11:37:12 ubuntuserver sshd-session[1170]: Connection closed by invalid user ubuntu 203.0.113.50 port 42724 [preauth]
+Nov 08 11:47:04 ubuntuserver sshd-session[1176]: Invalid user test from 203.0.113.50 port 42726
+Nov 08 11:47:04 ubuntuserver sshd-session[1176]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 11:47:04 ubuntuserver sshd-session[1176]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 11:47:05 ubuntuserver sshd-session[1176]: Failed password for invalid user test from 203.0.113.50 port 42726 ssh2
+Nov 08 11:47:06 ubuntuserver sshd-session[1176]: Connection closed by invalid user test 203.0.113.50 port 42726 [preauth]
+Nov 08 11:57:58 ubuntuserver sshd-session[1180]: Invalid user oracle from 203.0.113.50 port 42729
+Nov 08 11:57:58 ubuntuserver sshd-session[1180]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 11:57:58 ubuntuserver sshd-session[1180]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 11:58:00 ubuntuserver sshd-session[1180]: Failed password for invalid user oracle from 203.0.113.50 port 42729 ssh2
+Nov 08 11:58:01 ubuntuserver sshd-session[1180]: Connection closed by invalid user oracle 203.0.113.50 port 42729 [preauth]
+Nov 08 12:09:53 ubuntuserver unix_chkpwd[1184]: password check failed for user (root)
+Nov 08 12:09:53 ubuntuserver sshd-session[1183]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50  user=root
+Nov 08 12:09:53 ubuntuserver sshd-session[1183]: Failed password for root from 203.0.113.50 port 42733 ssh2
+Nov 08 12:09:55 ubuntuserver sshd-session[1183]: Connection closed by authenticating user root 203.0.113.50 port 42733 [preauth]
+Nov 08 12:17:01 ubuntuserver CRON[1192]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 12:17:02 ubuntuserver CRON[1192]: pam_unix(cron:session): session closed for user root
+Nov 08 12:19:59 ubuntuserver sshd-session[1196]: Invalid user admin from 203.0.113.50 port 42738
+Nov 08 12:19:59 ubuntuserver sshd-session[1196]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 12:19:59 ubuntuserver sshd-session[1196]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 12:20:00 ubuntuserver sshd-session[1196]: Failed password for invalid user admin from 203.0.113.50 port 42738 ssh2
+Nov 08 12:20:01 ubuntuserver sshd-session[1196]: Connection closed by invalid user admin 203.0.113.50 port 42738 [preauth]
+Nov 08 12:31:58 ubuntuserver sshd-session[1203]: Invalid user pi from 203.0.113.50 port 42744
+Nov 08 12:31:58 ubuntuserver sshd-session[1203]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 12:31:58 ubuntuserver sshd-session[1203]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 12:31:59 ubuntuserver sshd-session[1203]: Failed password for invalid user pi from 203.0.113.50 port 42744 ssh2
+Nov 08 12:32:00 ubuntuserver sshd-session[1203]: Connection closed by invalid user pi 203.0.113.50 port 42744 [preauth]
+Nov 08 12:43:17 ubuntuserver sshd-session[1207]: Invalid user ubuntu from 203.0.113.50 port 42750
+Nov 08 12:43:17 ubuntuserver sshd-session[1207]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 12:43:17 ubuntuserver sshd-session[1207]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 12:43:19 ubuntuserver sshd-session[1207]: Failed password for invalid user ubuntu from 203.0.113.50 port 42750 ssh2
+Nov 08 12:43:20 ubuntuserver sshd-session[1207]: Connection closed by invalid user ubuntu 203.0.113.50 port 42750 [preauth]
+Nov 08 12:54:45 ubuntuserver sshd-session[1212]: Invalid user test from 203.0.113.50 port 42754
+Nov 08 12:54:45 ubuntuserver sshd-session[1212]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 12:54:45 ubuntuserver sshd-session[1212]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 12:54:46 ubuntuserver sshd-session[1212]: Failed password for invalid user test from 203.0.113.50 port 42754 ssh2
+Nov 08 12:54:48 ubuntuserver sshd-session[1212]: Connection closed by invalid user test 203.0.113.50 port 42754 [preauth]
+Nov 08 13:05:50 ubuntuserver sshd-session[1218]: Invalid user oracle from 203.0.113.50 port 42760
+Nov 08 13:05:50 ubuntuserver sshd-session[1218]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 13:05:50 ubuntuserver sshd-session[1218]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 13:05:51 ubuntuserver sshd-session[1218]: Failed password for invalid user oracle from 203.0.113.50 port 42760 ssh2
+Nov 08 13:05:52 ubuntuserver sshd-session[1218]: Connection closed by invalid user oracle 203.0.113.50 port 42760 [preauth]
+Nov 08 13:14:44 ubuntuserver unix_chkpwd[1225]: password check failed for user (root)
+Nov 08 13:14:44 ubuntuserver sshd-session[1224]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50  user=root
+Nov 08 13:14:45 ubuntuserver sshd-session[1224]: Failed password for root from 203.0.113.50 port 42763 ssh2
+Nov 08 13:14:48 ubuntuserver sshd-session[1224]: Connection closed by authenticating user root 203.0.113.50 port 42763 [preauth]
+Nov 08 13:17:01 ubuntuserver CRON[1231]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 13:17:02 ubuntuserver CRON[1231]: pam_unix(cron:session): session closed for user root
+Nov 08 13:26:11 ubuntuserver sshd-session[1239]: Invalid user admin from 203.0.113.50 port 42770
+Nov 08 13:26:11 ubuntuserver sshd-session[1239]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 13:26:11 ubuntuserver sshd-session[1239]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.50 
+Nov 08 13:26:11 ubuntuserver sshd-session[1239]: Failed password for invalid user admin from 203.0.113.50 port 42770 ssh2
+Nov 08 13:26:13 ubuntuserver sshd-session[1239]: Connection closed by invalid user admin 203.0.113.50 port 42770 [preauth]
+Nov 08 13:40:12 ubuntuserver unix_chkpwd[1247]: password check failed for user (kamil)
+Nov 08 13:40:12 ubuntuserver sshd-session[1246]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.5  user=kamil
+Nov 08 13:40:14 ubuntuserver sshd-session[1246]: Failed password for kamil from 192.168.100.5 port 39961 ssh2
+Nov 08 13:40:15 ubuntuserver sshd-session[1246]: Connection closed by authenticating user kamil 192.168.100.5 port 39961 [preauth]
+Nov 08 13:40:20 ubuntuserver sshd-session[1249]: Accepted password for kamil from 192.168.100.5 port 39963 ssh2
+Nov 08 13:40:20 ubuntuserver sshd-session[1249]: pam_unix(sshd:session): session opened for user kamil(uid=1000) by kamil(uid=0)
+Nov 08 13:40:20 ubuntuserver systemd-logind[612]: New session 2 of user kamil.
+Nov 08 13:40:20 ubuntuserver systemd[1]: Started session-2.scope - Session 2 of User kamil.
+Nov 08 13:40:45 ubuntuserver sudo[1250]: kamil : TTY=pts/0 ; PWD=/home/kamil ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 08 13:40:45 ubuntuserver sudo[1250]: pam_unix(sudo:session): session opened for user root(uid=0) by kamil(uid=1000)
+Nov 08 13:40:51 ubuntuserver sudo[1250]: pam_unix(sudo:session): session closed for user root
+Nov 08 13:55:20 ubuntuserver sshd-session[1249]: Received disconnect from 192.168.100.5 port 39963:11: disconnected by user
+Nov 08 13:55:20 ubuntuserver sshd-session[1249]: Disconnected from user kamil 192.168.100.5 port 39963
+Nov 08 13:55:20 ubuntuserver sshd-session[1249]: pam_unix(sshd:session): session closed for user kamil
+Nov 08 13:55:20 ubuntuserver systemd-logind[612]: Session 2 logged out. Waiting for processes to exit.
+Nov 08 13:55:20 ubuntuserver systemd-logind[612]: Removed session 2.
+Nov 08 14:17:01 ubuntuserver CRON[1257]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 14:17:02 ubuntuserver CRON[1257]: pam_unix(cron:session): session closed for user root
+Nov 08 15:17:01 ubuntuserver CRON[1265]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 15:17:02 ubuntuserver CRON[1265]: pam_unix(cron:session): session closed for user root
+Nov 08 15:42:10 ubuntuserver sshd-session[1272]: Invalid user admin from 2001:db8::25 port 40338
+Nov 08 15:42:10 ubuntuserver sshd-session[1272]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 15:42:10 ubuntuserver sshd-session[1272]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=2001:db8::25 
+Nov 08 15:42:12 ubuntuserver sshd-session[1272]: Failed password for invalid user admin from 2001:db8::25 port 40338 ssh2
+Nov 08 15:42:14 ubuntuserver sshd-session[1272]: Connection closed by invalid user admin 2001:db8::25 port 40338 [preauth]
+Nov 08 15:42:30 ubuntuserver sshd-session[1277]: Invalid user user from 2001:db8::25 port 40340
+Nov 08 15:42:30 ubuntuserver sshd-session[1277]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 15:42:30 ubuntuserver sshd-session[1277]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=2001:db8::25 
+Nov 08 15:42:31 ubuntuserver sshd-session[1277]: Failed password for invalid user user from 2001:db8::25 port 40340 ssh2
+Nov 08 15:42:33 ubuntuserver sshd-session[1277]: Connection closed by invalid user user 2001:db8::25 port 40340 [preauth]
+Nov 08 15:42:50 ubuntuserver sshd-session[1286]: Invalid user test from 2001:db8::25 port 40345
+Nov 08 15:42:50 ubuntuserver sshd-session[1286]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 15:42:50 ubuntuserver sshd-session[1286]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=2001:db8::25 
+Nov 08 15:42:51 ubuntuserver sshd-session[1286]: Failed password for invalid user test from 2001:db8::25 port 40345 ssh2
+Nov 08 15:42:54 ubuntuserver sshd-session[1286]: Connection closed by invalid user test 2001:db8::25 port 40345 [preauth]
+Nov 08 15:43:10 ubuntuserver sshd-session[1291]: Invalid user guest from 2001:db8::25 port 40351
+Nov 08 15:43:10 ubuntuserver sshd-session[1291]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 15:43:10 ubuntuserver sshd-session[1291]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=2001:db8::25 
+Nov 08 15:43:11 ubuntuserver sshd-session[1291]: Failed password for invalid user guest from 2001:db8::25 port 40351 ssh2
+Nov 08 15:43:12 ubuntuserver sshd-session[1291]: Connection closed by invalid user guest 2001:db8::25 port 40351 [preauth]
+Nov 08 16:17:01 ubuntuserver CRON[1299]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 16:17:02 ubuntuserver CRON[1299]: pam_unix(cron:session): session closed for user root
+Nov 08 17:17:01 ubuntuserver CRON[1302]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 17:17:02 ubuntuserver CRON[1302]: pam_unix(cron:session): session closed for user root
+Nov 08 18:05:10 ubuntuserver sshd-session[1308]: Invalid user user from 192.168.100.31 port 51110
+Nov 08 18:05:10 ubuntuserver sshd-session[1308]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:10 ubuntuserver sshd-session[1308]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:11 ubuntuserver sshd-session[1314]: Invalid user ubuntu from 192.168.100.31 port 51114
+Nov 08 18:05:11 ubuntuserver sshd-session[1314]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:11 ubuntuserver sshd-session[1314]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:11 ubuntuserver sshd-session[1308]: Failed password for invalid user user from 192.168.100.31 port 51110 ssh2
+Nov 08 18:05:11 ubuntuserver sshd-session[1319]: Invalid user guest from 192.168.100.31 port 51120
+Nov 08 18:05:11 ubuntuserver sshd-session[1319]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:11 ubuntuserver sshd-session[1319]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:12 ubuntuserver sshd-session[1326]: Invalid user user from 192.168.100.31 port 51125
+Nov 08 18:05:12 ubuntuserver sshd-session[1326]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:12 ubuntuserver sshd-session[1326]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:12 ubuntuserver sshd-session[1308]: Connection closed by invalid user user 192.168.100.31 port 51110 [preauth]
+Nov 08 18:05:13 ubuntuserver sshd-session[1314]: Failed password for invalid user ubuntu from 192.168.100.31 port 51114 ssh2
+Nov 08 18:05:13 ubuntuserver sshd-session[1314]: Connection closed by invalid user ubuntu 192.168.100.31 port 51114 [preauth]
+Nov 08 18:05:13 ubuntuserver sshd-session[1335]: Invalid user postgres from 192.168.100.31 port 51130
+Nov 08 18:05:13 ubuntuserver sshd-session[1335]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:13 ubuntuserver sshd-session[1335]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:13 ubuntuserver sshd-session[1319]: Failed password for invalid user guest from 192.168.100.31 port 51120 ssh2
+Nov 08 18:05:13 ubuntuserver sshd-session[1319]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:13 ubuntuserver sshd-session[1319]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:14 ubuntuserver sshd-session[1326]: Failed password for invalid user user from 192.168.100.31 port 51125 ssh2
+Nov 08 18:05:14 ubuntuserver sshd-session[1344]: Invalid user oracle from 192.168.100.31 port 51135
+Nov 08 18:05:14 ubuntuserver sshd-session[1344]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:14 ubuntuserver sshd-session[1344]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:15 ubuntuserver sshd-session[1319]: Failed password for invalid user guest from 192.168.100.31 port 51120 ssh2
+Nov 08 18:05:15 ubuntuserver sshd-session[1351]: Invalid user oracle from 192.168.100.31 port 51140
+Nov 08 18:05:15 ubuntuserver sshd-session[1351]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:15 ubuntuserver sshd-session[1351]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:15 ubuntuserver sshd-session[1335]: Failed password for invalid user postgres from 192.168.100.31 port 51130 ssh2
+Nov 08 18:05:15 ubuntuserver sshd-session[1319]: Connection closed by invalid user guest 192.168.100.31 port 51120 [preauth]
+Nov 08 18:05:15 ubuntuserver sshd-session[1319]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:16 ubuntuserver sshd-session[1326]: Connection closed by invalid user user 192.168.100.31 port 51125 [preauth]
+Nov 08 18:05:16 ubuntuserver sshd-session[1335]: Connection closed by invalid user postgres 192.168.100.31 port 51130 [preauth]
+Nov 08 18:05:16 ubuntuserver sshd-session[1360]: Invalid user guest from 192.168.100.31 port 51142
+Nov 08 18:05:16 ubuntuserver sshd-session[1360]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:16 ubuntuserver sshd-session[1360]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:16 ubuntuserver sshd-session[1344]: Failed password for invalid user oracle from 192.168.100.31 port 51135 ssh2
+Nov 08 18:05:16 ubuntuserver sshd-session[1344]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:16 ubuntuserver sshd-session[1344]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:16 ubuntuserver sshd-session[1351]: Failed password for invalid user oracle from 192.168.100.31 port 51140 ssh2
+Nov 08 18:05:17 ubuntuserver unix_chkpwd[1368]: password check failed for user (kamil)
+Nov 08 18:05:17 ubuntuserver sshd-session[1367]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=kamil
+Nov 08 18:05:17 ubuntuserver sshd-session[1360]: Failed password for invalid user guest from 192.168.100.31 port 51142 ssh2
+Nov 08 18:05:17 ubuntuserver sshd-session[1344]: Failed password for invalid user oracle from 192.168.100.31 port 51135 ssh2
+Nov 08 18:05:17 ubuntuserver sshd-session[1351]: Connection closed by invalid user oracle 192.168.100.31 port 51140 [preauth]
+Nov 08 18:05:18 ubuntuserver sshd-session[1370]: Invalid user postgres from 192.168.100.31 port 51148
+Nov 08 18:05:18 ubuntuserver sshd-session[1370]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:18 ubuntuserver sshd-session[1370]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:18 ubuntuserver sshd-session[1367]: Failed password for kamil from 192.168.100.31 port 51145 ssh2
+Nov 08 18:05:18 ubuntuserver sshd-session[1360]: Connection closed by invalid user guest 192.168.100.31 port 51142 [preauth]
+Nov 08 18:05:19 ubuntuserver sshd-session[1344]: Connection closed by invalid user oracle 192.168.100.31 port 51135 [preauth]
+Nov 08 18:05:19 ubuntuserver sshd-session[1344]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:19 ubuntuserver sshd-session[1370]: Failed password for invalid user postgres from 192.168.100.31 port 51148 ssh2
+Nov 08 18:05:19 ubuntuserver sshd-session[1379]: Invalid user test from 192.168.100.31 port 51154
+Nov 08 18:05:19 ubuntuserver sshd-session[1379]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:19 ubuntuserver sshd-session[1379]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:20 ubuntuserver sshd-session[1367]: Connection closed by authenticating user kamil 192.168.100.31 port 51145 [preauth]
+Nov 08 18:05:20 ubuntuserver sshd-session[1384]: Invalid user user from 192.168.100.31 port 51158
+Nov 08 18:05:20 ubuntuserver sshd-session[1384]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:20 ubuntuserver sshd-session[1384]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:20 ubuntuserver sshd-session[1379]: Failed password for invalid user test from 192.168.100.31 port 51154 ssh2
+Nov 08 18:05:20 ubuntuserver sshd-session[1370]: Connection closed by invalid user postgres 192.168.100.31 port 51148 [preauth]
+Nov 08 18:05:21 ubuntuserver sshd-session[1384]: Failed password for invalid user user from 192.168.100.31 port 51158 ssh2
+Nov 08 18:05:21 ubuntuserver sshd-session[1384]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:21 ubuntuserver sshd-session[1384]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:21 ubuntuserver sshd-session[1389]: Invalid user oracle from 192.168.100.31 port 51164
+Nov 08 18:05:21 ubuntuserver sshd-session[1389]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:21 ubuntuserver sshd-session[1389]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:21 ubuntuserver unix_chkpwd[1393]: password check failed for user (root)
+Nov 08 18:05:21 ubuntuserver sshd-session[1392]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:05:22 ubuntuserver sshd-session[1379]: Connection closed by invalid user test 192.168.100.31 port 51154 [preauth]
+Nov 08 18:05:22 ubuntuserver sshd-session[1389]: Failed password for invalid user oracle from 192.168.100.31 port 51164 ssh2
+Nov 08 18:05:22 ubuntuserver sshd-session[1389]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:22 ubuntuserver sshd-session[1389]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:22 ubuntuserver sshd-session[1395]: Invalid user admin from 192.168.100.31 port 51171
+Nov 08 18:05:22 ubuntuserver sshd-session[1395]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:22 ubuntuserver sshd-session[1395]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:22 ubuntuserver sshd-session[1384]: Failed password for invalid user user from 192.168.100.31 port 51158 ssh2
+Nov 08 18:05:23 ubuntuserver unix_chkpwd[1403]: password check failed for user (root)
+Nov 08 18:05:23 ubuntuserver sshd-session[1402]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:05:23 ubuntuserver sshd-session[1392]: Failed password for root from 192.168.100.31 port 51169 ssh2
+Nov 08 18:05:24 ubuntuserver sshd-session[1395]: Failed password for invalid user admin from 192.168.100.31 port 51171 ssh2
+Nov 08 18:05:24 ubuntuserver unix_chkpwd[1406]: password check failed for user (kamil)
+Nov 08 18:05:24 ubuntuserver sshd-session[1405]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=kamil
+Nov 08 18:05:24 ubuntuserver sshd-session[1392]: Connection closed by authenticating user root 192.168.100.31 port 51169 [preauth]
+Nov 08 18:05:24 ubuntuserver sshd-session[1389]: Failed password for invalid user oracle from 192.168.100.31 port 51164 ssh2
+Nov 08 18:05:25 ubuntuserver unix_chkpwd[1409]: password check failed for user (root)
+Nov 08 18:05:25 ubuntuserver sshd-session[1408]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:05:25 ubuntuserver sshd-session[1384]: Connection closed by invalid user user 192.168.100.31 port 51158 [preauth]
+Nov 08 18:05:25 ubuntuserver sshd-session[1384]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:25 ubuntuserver sshd-session[1395]: Connection closed by invalid user admin 192.168.100.31 port 51171 [preauth]
+Nov 08 18:05:25 ubuntuserver sshd-session[1405]: Failed password for kamil from 192.168.100.31 port 51182 ssh2
+Nov 08 18:05:25 ubuntuserver sshd-session[1402]: Failed password for root from 192.168.100.31 port 51176 ssh2
+Nov 08 18:05:26 ubuntuserver sshd-session[1389]: Connection closed by invalid user oracle 192.168.100.31 port 51164 [preauth]
+Nov 08 18:05:26 ubuntuserver sshd-session[1389]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:26 ubuntuserver sshd-session[1415]: Invalid user user from 192.168.100.31 port 51190
+Nov 08 18:05:26 ubuntuserver sshd-session[1415]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:26 ubuntuserver sshd-session[1415]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:26 ubuntuserver sshd-session[1408]: Failed password for root from 192.168.100.31 port 51188 ssh2
+Nov 08 18:05:26 ubuntuserver sshd-session[1421]: Invalid user admin from 192.168.100.31 port 51193
+Nov 08 18:05:26 ubuntuserver sshd-session[1421]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:26 ubuntuserver sshd-session[1421]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:27 ubuntuserver sshd-session[1402]: Connection closed by authenticating user root 192.168.100.31 port 51176 [preauth]
+Nov 08 18:05:27 ubuntuserver sshd-session[1405]: Connection closed by authenticating user kamil 192.168.100.31 port 51182 [preauth]
+Nov 08 18:05:27 ubuntuserver sshd-session[1408]: Connection closed by authenticating user root 192.168.100.31 port 51188 [preauth]
+Nov 08 18:05:27 ubuntuserver sshd-session[1415]: Failed password for invalid user user from 192.168.100.31 port 51190 ssh2
+Nov 08 18:05:27 ubuntuserver sshd-session[1428]: Invalid user test from 192.168.100.31 port 51200
+Nov 08 18:05:27 ubuntuserver sshd-session[1428]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:27 ubuntuserver sshd-session[1428]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:28 ubuntuserver sshd-session[1421]: Failed password for invalid user admin from 192.168.100.31 port 51193 ssh2
+Nov 08 18:05:28 ubuntuserver sshd-session[1421]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:28 ubuntuserver sshd-session[1421]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:28 ubuntuserver unix_chkpwd[1432]: password check failed for user (root)
+Nov 08 18:05:28 ubuntuserver sshd-session[1431]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:05:29 ubuntuserver sshd-session[1437]: Invalid user ftpuser from 192.168.100.31 port 51209
+Nov 08 18:05:29 ubuntuserver sshd-session[1437]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:29 ubuntuserver sshd-session[1437]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:29 ubuntuserver sshd-session[1415]: Connection closed by invalid user user 192.168.100.31 port 51190 [preauth]
+Nov 08 18:05:29 ubuntuserver sshd-session[1421]: Failed password for invalid user admin from 192.168.100.31 port 51193 ssh2
+Nov 08 18:05:29 ubuntuserver sshd-session[1428]: Failed password for invalid user test from 192.168.100.31 port 51200 ssh2
+Nov 08 18:05:29 ubuntuserver sshd-session[1431]: Failed password for root from 192.168.100.31 port 51205 ssh2
+Nov 08 18:05:30 ubuntuserver sshd-session[1446]: Invalid user user from 192.168.100.31 port 51215
+Nov 08 18:05:30 ubuntuserver sshd-session[1446]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:30 ubuntuserver sshd-session[1446]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:30 ubuntuserver sshd-session[1437]: Failed password for invalid user ftpuser from 192.168.100.31 port 51209 ssh2
+Nov 08 18:05:31 ubuntuserver sshd-session[1431]: Connection closed by authenticating user root 192.168.100.31 port 51205 [preauth]
+Nov 08 18:05:31 ubuntuserver sshd-session[1428]: Connection closed by invalid user test 192.168.100.31 port 51200 [preauth]
+Nov 08 18:05:31 ubuntuserver sshd-session[1454]: Invalid user admin from 192.168.100.31 port 51217
+Nov 08 18:05:31 ubuntuserver sshd-session[1454]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:31 ubuntuserver sshd-session[1454]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:31 ubuntuserver sshd-session[1421]: Connection closed by invalid user admin 192.168.100.31 port 51193 [preauth]
+Nov 08 18:05:31 ubuntuserver sshd-session[1421]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:32 ubuntuserver sshd-session[1463]: Invalid user test from 192.168.100.31 port 51219
+Nov 08 18:05:32 ubuntuserver sshd-session[1463]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:32 ubuntuserver sshd-session[1463]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:32 ubuntuserver sshd-session[1437]: Connection closed by invalid user ftpuser 192.168.100.31 port 51209 [preauth]
+Nov 08 18:05:32 ubuntuserver sshd-session[1446]: Failed password for invalid user user from 192.168.100.31 port 51215 ssh2
+Nov 08 18:05:32 ubuntuserver sshd-session[1470]: Invalid user ubuntu from 192.168.100.31 port 51221
+Nov 08 18:05:32 ubuntuserver sshd-session[1470]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:32 ubuntuserver sshd-session[1470]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:33 ubuntuserver sshd-session[1454]: Failed password for invalid user admin from 192.168.100.31 port 51217 ssh2
+Nov 08 18:05:33 ubuntuserver sshd-session[1463]: Failed password for invalid user test from 192.168.100.31 port 51219 ssh2
+Nov 08 18:05:33 ubuntuserver sshd-session[1463]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:33 ubuntuserver sshd-session[1463]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:33 ubuntuserver sshd-session[1476]: Invalid user oracle from 192.168.100.31 port 51227
+Nov 08 18:05:33 ubuntuserver sshd-session[1476]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:33 ubuntuserver sshd-session[1476]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:34 ubuntuserver sshd-session[1446]: Connection closed by invalid user user 192.168.100.31 port 51215 [preauth]
+Nov 08 18:05:34 ubuntuserver sshd-session[1463]: Failed password for invalid user test from 192.168.100.31 port 51219 ssh2
+Nov 08 18:05:34 ubuntuserver sshd-session[1483]: Invalid user test from 192.168.100.31 port 51229
+Nov 08 18:05:34 ubuntuserver sshd-session[1483]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:34 ubuntuserver sshd-session[1483]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:34 ubuntuserver sshd-session[1470]: Failed password for invalid user ubuntu from 192.168.100.31 port 51221 ssh2
+Nov 08 18:05:34 ubuntuserver sshd-session[1470]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:34 ubuntuserver sshd-session[1470]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:35 ubuntuserver sshd-session[1476]: Failed password for invalid user oracle from 192.168.100.31 port 51227 ssh2
+Nov 08 18:05:35 ubuntuserver sshd-session[1476]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:35 ubuntuserver sshd-session[1476]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:35 ubuntuserver sshd-session[1454]: Connection closed by invalid user admin 192.168.100.31 port 51217 [preauth]
+Nov 08 18:05:35 ubuntuserver unix_chkpwd[1490]: password check failed for user (root)
+Nov 08 18:05:35 ubuntuserver sshd-session[1489]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:05:35 ubuntuserver sshd-session[1470]: Failed password for invalid user ubuntu from 192.168.100.31 port 51221 ssh2
+Nov 08 18:05:35 ubuntuserver sshd-session[1463]: Connection closed by invalid user test 192.168.100.31 port 51219 [preauth]
+Nov 08 18:05:35 ubuntuserver sshd-session[1463]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:36 ubuntuserver sshd-session[1496]: Invalid user test from 192.168.100.31 port 51239
+Nov 08 18:05:36 ubuntuserver sshd-session[1496]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:36 ubuntuserver sshd-session[1496]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:36 ubuntuserver sshd-session[1483]: Failed password for invalid user test from 192.168.100.31 port 51229 ssh2
+Nov 08 18:05:36 ubuntuserver sshd-session[1476]: Failed password for invalid user oracle from 192.168.100.31 port 51227 ssh2
+Nov 08 18:05:36 ubuntuserver sshd-session[1489]: Failed password for root from 192.168.100.31 port 51235 ssh2
+Nov 08 18:05:37 ubuntuserver sshd-session[1499]: Invalid user ftpuser from 192.168.100.31 port 51241
+Nov 08 18:05:37 ubuntuserver sshd-session[1499]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:37 ubuntuserver sshd-session[1499]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:37 ubuntuserver sshd-session[1496]: Failed password for invalid user test from 192.168.100.31 port 51239 ssh2
+Nov 08 18:05:37 ubuntuserver sshd-session[1476]: Connection closed by invalid user oracle 192.168.100.31 port 51227 [preauth]
+Nov 08 18:05:37 ubuntuserver sshd-session[1476]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:37 ubuntuserver sshd-session[1470]: Connection closed by invalid user ubuntu 192.168.100.31 port 51221 [preauth]
+Nov 08 18:05:37 ubuntuserver sshd-session[1470]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:37 ubuntuserver sshd-session[1496]: Connection closed by invalid user test 192.168.100.31 port 51239 [preauth]
+Nov 08 18:05:37 ubuntuserver sshd-session[1503]: Invalid user user from 192.168.100.31 port 51247
+Nov 08 18:05:37 ubuntuserver sshd-session[1503]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:37 ubuntuserver sshd-session[1503]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:37 ubuntuserver sshd-session[1499]: Failed password for invalid user ftpuser from 192.168.100.31 port 51241 ssh2
+Nov 08 18:05:38 ubuntuserver sshd-session[1483]: Connection closed by invalid user test 192.168.100.31 port 51229 [preauth]
+Nov 08 18:05:38 ubuntuserver sshd-session[1489]: Connection closed by authenticating user root 192.168.100.31 port 51235 [preauth]
+Nov 08 18:05:38 ubuntuserver unix_chkpwd[1509]: password check failed for user (kamil)
+Nov 08 18:05:38 ubuntuserver sshd-session[1508]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=kamil
+Nov 08 18:05:38 ubuntuserver sshd-session[1499]: Connection closed by invalid user ftpuser 192.168.100.31 port 51241 [preauth]
+Nov 08 18:05:39 ubuntuserver unix_chkpwd[1513]: password check failed for user (kamil)
+Nov 08 18:05:39 ubuntuserver sshd-session[1512]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=kamil
+Nov 08 18:05:40 ubuntuserver sshd-session[1503]: Failed password for invalid user user from 192.168.100.31 port 51247 ssh2
+Nov 08 18:05:40 ubuntuserver sshd-session[1508]: Failed password for kamil from 192.168.100.31 port 51254 ssh2
+Nov 08 18:05:40 ubuntuserver sshd-session[1515]: Invalid user postgres from 192.168.100.31 port 51263
+Nov 08 18:05:40 ubuntuserver sshd-session[1515]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:40 ubuntuserver sshd-session[1515]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:41 ubuntuserver sshd-session[1512]: Failed password for kamil from 192.168.100.31 port 51257 ssh2
+Nov 08 18:05:41 ubuntuserver sshd-session[1518]: Invalid user admin from 192.168.100.31 port 51270
+Nov 08 18:05:41 ubuntuserver sshd-session[1518]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:41 ubuntuserver sshd-session[1518]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:41 ubuntuserver sshd-session[1508]: Connection closed by authenticating user kamil 192.168.100.31 port 51254 [preauth]
+Nov 08 18:05:41 ubuntuserver sshd-session[1524]: Invalid user oracle from 192.168.100.31 port 51277
+Nov 08 18:05:41 ubuntuserver sshd-session[1524]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:41 ubuntuserver sshd-session[1524]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:42 ubuntuserver sshd-session[1503]: Connection closed by invalid user user 192.168.100.31 port 51247 [preauth]
+Nov 08 18:05:42 ubuntuserver sshd-session[1515]: Failed password for invalid user postgres from 192.168.100.31 port 51263 ssh2
+Nov 08 18:05:42 ubuntuserver sshd-session[1512]: Connection closed by authenticating user kamil 192.168.100.31 port 51257 [preauth]
+Nov 08 18:05:42 ubuntuserver sshd-session[1527]: Invalid user postgres from 192.168.100.31 port 51283
+Nov 08 18:05:42 ubuntuserver sshd-session[1527]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:42 ubuntuserver sshd-session[1527]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:43 ubuntuserver sshd-session[1518]: Failed password for invalid user admin from 192.168.100.31 port 51270 ssh2
+Nov 08 18:05:43 ubuntuserver sshd-session[1531]: Invalid user admin from 192.168.100.31 port 51290
+Nov 08 18:05:43 ubuntuserver sshd-session[1531]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:43 ubuntuserver sshd-session[1531]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:43 ubuntuserver sshd-session[1538]: Invalid user postgres from 192.168.100.31 port 51296
+Nov 08 18:05:43 ubuntuserver sshd-session[1538]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:43 ubuntuserver sshd-session[1538]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:44 ubuntuserver sshd-session[1524]: Failed password for invalid user oracle from 192.168.100.31 port 51277 ssh2
+Nov 08 18:05:44 ubuntuserver sshd-session[1515]: Connection closed by invalid user postgres 192.168.100.31 port 51263 [preauth]
+Nov 08 18:05:44 ubuntuserver sshd-session[1527]: Failed password for invalid user postgres from 192.168.100.31 port 51283 ssh2
+Nov 08 18:05:44 ubuntuserver sshd-session[1547]: Invalid user ftpuser from 192.168.100.31 port 51301
+Nov 08 18:05:44 ubuntuserver sshd-session[1547]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:44 ubuntuserver sshd-session[1547]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:45 ubuntuserver sshd-session[1518]: Connection closed by invalid user admin 192.168.100.31 port 51270 [preauth]
+Nov 08 18:05:45 ubuntuserver sshd-session[1531]: Failed password for invalid user admin from 192.168.100.31 port 51290 ssh2
+Nov 08 18:05:45 ubuntuserver sshd-session[1531]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:45 ubuntuserver sshd-session[1531]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:45 ubuntuserver sshd-session[1538]: Failed password for invalid user postgres from 192.168.100.31 port 51296 ssh2
+Nov 08 18:05:45 ubuntuserver sshd-session[1538]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:45 ubuntuserver sshd-session[1538]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:45 ubuntuserver sshd-session[1552]: Invalid user test from 192.168.100.31 port 51307
+Nov 08 18:05:45 ubuntuserver sshd-session[1552]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:45 ubuntuserver sshd-session[1552]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:46 ubuntuserver sshd-session[1547]: Failed password for invalid user ftpuser from 192.168.100.31 port 51301 ssh2
+Nov 08 18:05:46 ubuntuserver sshd-session[1524]: Connection closed by invalid user oracle 192.168.100.31 port 51277 [preauth]
+Nov 08 18:05:46 ubuntuserver sshd-session[1527]: Connection closed by invalid user postgres 192.168.100.31 port 51283 [preauth]
+Nov 08 18:05:46 ubuntuserver sshd-session[1552]: Failed password for invalid user test from 192.168.100.31 port 51307 ssh2
+Nov 08 18:05:46 ubuntuserver sshd-session[1555]: Invalid user ftpuser from 192.168.100.31 port 51311
+Nov 08 18:05:46 ubuntuserver sshd-session[1555]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:46 ubuntuserver sshd-session[1555]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:46 ubuntuserver sshd-session[1531]: Failed password for invalid user admin from 192.168.100.31 port 51290 ssh2
+Nov 08 18:05:47 ubuntuserver sshd-session[1531]: Connection closed by invalid user admin 192.168.100.31 port 51290 [preauth]
+Nov 08 18:05:47 ubuntuserver sshd-session[1531]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:47 ubuntuserver sshd-session[1538]: Failed password for invalid user postgres from 192.168.100.31 port 51296 ssh2
+Nov 08 18:05:47 ubuntuserver sshd-session[1558]: Invalid user oracle from 192.168.100.31 port 51315
+Nov 08 18:05:47 ubuntuserver sshd-session[1558]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:47 ubuntuserver sshd-session[1558]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:47 ubuntuserver sshd-session[1538]: Connection closed by invalid user postgres 192.168.100.31 port 51296 [preauth]
+Nov 08 18:05:47 ubuntuserver sshd-session[1538]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:48 ubuntuserver sshd-session[1566]: Invalid user user from 192.168.100.31 port 51317
+Nov 08 18:05:48 ubuntuserver sshd-session[1566]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:48 ubuntuserver sshd-session[1566]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:48 ubuntuserver sshd-session[1547]: Connection closed by invalid user ftpuser 192.168.100.31 port 51301 [preauth]
+Nov 08 18:05:48 ubuntuserver sshd-session[1558]: Failed password for invalid user oracle from 192.168.100.31 port 51315 ssh2
+Nov 08 18:05:48 ubuntuserver sshd-session[1555]: Failed password for invalid user ftpuser from 192.168.100.31 port 51311 ssh2
+Nov 08 18:05:48 ubuntuserver sshd-session[1555]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:48 ubuntuserver sshd-session[1555]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:48 ubuntuserver sshd-session[1552]: Connection closed by invalid user test 192.168.100.31 port 51307 [preauth]
+Nov 08 18:05:48 ubuntuserver sshd-session[1569]: Invalid user postgres from 192.168.100.31 port 51324
+Nov 08 18:05:48 ubuntuserver sshd-session[1569]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:48 ubuntuserver sshd-session[1569]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:49 ubuntuserver sshd-session[1578]: Invalid user ubuntu from 192.168.100.31 port 51329
+Nov 08 18:05:49 ubuntuserver sshd-session[1578]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:49 ubuntuserver sshd-session[1578]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:49 ubuntuserver sshd-session[1555]: Failed password for invalid user ftpuser from 192.168.100.31 port 51311 ssh2
+Nov 08 18:05:49 ubuntuserver sshd-session[1566]: Failed password for invalid user user from 192.168.100.31 port 51317 ssh2
+Nov 08 18:05:50 ubuntuserver sshd-session[1555]: Connection closed by invalid user ftpuser 192.168.100.31 port 51311 [preauth]
+Nov 08 18:05:50 ubuntuserver sshd-session[1555]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:50 ubuntuserver sshd-session[1558]: Connection closed by invalid user oracle 192.168.100.31 port 51315 [preauth]
+Nov 08 18:05:50 ubuntuserver sshd-session[1585]: Invalid user ftpuser from 192.168.100.31 port 51336
+Nov 08 18:05:50 ubuntuserver sshd-session[1585]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:50 ubuntuserver sshd-session[1585]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:50 ubuntuserver sshd-session[1578]: Failed password for invalid user ubuntu from 192.168.100.31 port 51329 ssh2
+Nov 08 18:05:50 ubuntuserver sshd-session[1569]: Failed password for invalid user postgres from 192.168.100.31 port 51324 ssh2
+Nov 08 18:05:50 ubuntuserver sshd-session[1592]: Invalid user postgres from 192.168.100.31 port 51339
+Nov 08 18:05:50 ubuntuserver sshd-session[1592]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:50 ubuntuserver sshd-session[1592]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:51 ubuntuserver sshd-session[1578]: Connection closed by invalid user ubuntu 192.168.100.31 port 51329 [preauth]
+Nov 08 18:05:51 ubuntuserver unix_chkpwd[1596]: password check failed for user (kamil)
+Nov 08 18:05:51 ubuntuserver sshd-session[1595]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=kamil
+Nov 08 18:05:52 ubuntuserver sshd-session[1566]: Connection closed by invalid user user 192.168.100.31 port 51317 [preauth]
+Nov 08 18:05:52 ubuntuserver sshd-session[1592]: Failed password for invalid user postgres from 192.168.100.31 port 51339 ssh2
+Nov 08 18:05:52 ubuntuserver sshd-session[1569]: Connection closed by invalid user postgres 192.168.100.31 port 51324 [preauth]
+Nov 08 18:05:52 ubuntuserver sshd-session[1603]: Invalid user postgres from 192.168.100.31 port 51349
+Nov 08 18:05:52 ubuntuserver sshd-session[1603]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:52 ubuntuserver sshd-session[1603]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:52 ubuntuserver sshd-session[1585]: Failed password for invalid user ftpuser from 192.168.100.31 port 51336 ssh2
+Nov 08 18:05:52 ubuntuserver sshd-session[1595]: Failed password for kamil from 192.168.100.31 port 51343 ssh2
+Nov 08 18:05:53 ubuntuserver sshd-session[1612]: Invalid user oracle from 192.168.100.31 port 51353
+Nov 08 18:05:53 ubuntuserver sshd-session[1612]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:53 ubuntuserver sshd-session[1612]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:53 ubuntuserver sshd-session[1592]: Connection closed by invalid user postgres 192.168.100.31 port 51339 [preauth]
+Nov 08 18:05:54 ubuntuserver sshd-session[1603]: Failed password for invalid user postgres from 192.168.100.31 port 51349 ssh2
+Nov 08 18:05:54 ubuntuserver sshd-session[1617]: Invalid user admin from 192.168.100.31 port 51359
+Nov 08 18:05:54 ubuntuserver sshd-session[1617]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:54 ubuntuserver sshd-session[1617]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:54 ubuntuserver sshd-session[1595]: Connection closed by authenticating user kamil 192.168.100.31 port 51343 [preauth]
+Nov 08 18:05:54 ubuntuserver sshd-session[1585]: Connection closed by invalid user ftpuser 192.168.100.31 port 51336 [preauth]
+Nov 08 18:05:54 ubuntuserver sshd-session[1612]: Failed password for invalid user oracle from 192.168.100.31 port 51353 ssh2
+Nov 08 18:05:55 ubuntuserver sshd-session[1625]: Invalid user admin from 192.168.100.31 port 51364
+Nov 08 18:05:55 ubuntuserver sshd-session[1625]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:55 ubuntuserver sshd-session[1625]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:55 ubuntuserver sshd-session[1617]: Failed password for invalid user admin from 192.168.100.31 port 51359 ssh2
+Nov 08 18:05:55 ubuntuserver sshd-session[1612]: Connection closed by invalid user oracle 192.168.100.31 port 51353 [preauth]
+Nov 08 18:05:55 ubuntuserver sshd-session[1629]: Invalid user user from 192.168.100.31 port 51366
+Nov 08 18:05:55 ubuntuserver sshd-session[1629]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:55 ubuntuserver sshd-session[1629]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:56 ubuntuserver sshd-session[1603]: Connection closed by invalid user postgres 192.168.100.31 port 51349 [preauth]
+Nov 08 18:05:56 ubuntuserver sshd-session[1625]: Failed password for invalid user admin from 192.168.100.31 port 51364 ssh2
+Nov 08 18:05:56 ubuntuserver sshd-session[1625]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:56 ubuntuserver sshd-session[1625]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:56 ubuntuserver sshd-session[1634]: Invalid user oracle from 192.168.100.31 port 51368
+Nov 08 18:05:56 ubuntuserver sshd-session[1634]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:56 ubuntuserver sshd-session[1634]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:56 ubuntuserver sshd-session[1629]: Failed password for invalid user user from 192.168.100.31 port 51366 ssh2
+Nov 08 18:05:57 ubuntuserver sshd-session[1640]: Invalid user oracle from 192.168.100.31 port 51374
+Nov 08 18:05:57 ubuntuserver sshd-session[1640]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:57 ubuntuserver sshd-session[1640]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:57 ubuntuserver sshd-session[1617]: Connection closed by invalid user admin 192.168.100.31 port 51359 [preauth]
+Nov 08 18:05:58 ubuntuserver sshd-session[1644]: Invalid user admin from 192.168.100.31 port 51380
+Nov 08 18:05:58 ubuntuserver sshd-session[1644]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:58 ubuntuserver sshd-session[1644]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:58 ubuntuserver sshd-session[1634]: Failed password for invalid user oracle from 192.168.100.31 port 51368 ssh2
+Nov 08 18:05:58 ubuntuserver sshd-session[1625]: Failed password for invalid user admin from 192.168.100.31 port 51364 ssh2
+Nov 08 18:05:58 ubuntuserver sshd-session[1640]: Failed password for invalid user oracle from 192.168.100.31 port 51374 ssh2
+Nov 08 18:05:58 ubuntuserver sshd-session[1629]: Connection closed by invalid user user 192.168.100.31 port 51366 [preauth]
+Nov 08 18:05:59 ubuntuserver sshd-session[1649]: Invalid user test from 192.168.100.31 port 51387
+Nov 08 18:05:59 ubuntuserver sshd-session[1649]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:59 ubuntuserver sshd-session[1649]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:59 ubuntuserver sshd-session[1640]: Connection closed by invalid user oracle 192.168.100.31 port 51374 [preauth]
+Nov 08 18:05:59 ubuntuserver sshd-session[1657]: Invalid user user from 192.168.100.31 port 51394
+Nov 08 18:05:59 ubuntuserver sshd-session[1657]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:59 ubuntuserver sshd-session[1657]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:05:59 ubuntuserver sshd-session[1644]: Failed password for invalid user admin from 192.168.100.31 port 51380 ssh2
+Nov 08 18:05:59 ubuntuserver sshd-session[1644]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:05:59 ubuntuserver sshd-session[1644]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:00 ubuntuserver sshd-session[1625]: Connection closed by invalid user admin 192.168.100.31 port 51364 [preauth]
+Nov 08 18:06:00 ubuntuserver sshd-session[1625]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:00 ubuntuserver unix_chkpwd[1664]: password check failed for user (root)
+Nov 08 18:06:00 ubuntuserver sshd-session[1663]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:06:00 ubuntuserver sshd-session[1634]: Connection closed by invalid user oracle 192.168.100.31 port 51368 [preauth]
+Nov 08 18:06:00 ubuntuserver sshd-session[1649]: Failed password for invalid user test from 192.168.100.31 port 51387 ssh2
+Nov 08 18:06:00 ubuntuserver sshd-session[1649]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:00 ubuntuserver sshd-session[1649]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:01 ubuntuserver sshd-session[1671]: Invalid user test from 192.168.100.31 port 51400
+Nov 08 18:06:01 ubuntuserver sshd-session[1671]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:01 ubuntuserver sshd-session[1671]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:01 ubuntuserver sshd-session[1663]: Failed password for root from 192.168.100.31 port 51398 ssh2
+Nov 08 18:06:01 ubuntuserver sshd-session[1649]: Failed password for invalid user test from 192.168.100.31 port 51387 ssh2
+Nov 08 18:06:01 ubuntuserver sshd-session[1657]: Failed password for invalid user user from 192.168.100.31 port 51394 ssh2
+Nov 08 18:06:01 ubuntuserver sshd-session[1644]: Failed password for invalid user admin from 192.168.100.31 port 51380 ssh2
+Nov 08 18:06:02 ubuntuserver unix_chkpwd[1676]: password check failed for user (root)
+Nov 08 18:06:02 ubuntuserver sshd-session[1675]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:06:03 ubuntuserver unix_chkpwd[1682]: password check failed for user (root)
+Nov 08 18:06:03 ubuntuserver sshd-session[1681]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:06:03 ubuntuserver sshd-session[1663]: Connection closed by authenticating user root 192.168.100.31 port 51398 [preauth]
+Nov 08 18:06:03 ubuntuserver sshd-session[1644]: Connection closed by invalid user admin 192.168.100.31 port 51380 [preauth]
+Nov 08 18:06:03 ubuntuserver sshd-session[1644]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:03 ubuntuserver sshd-session[1649]: Connection closed by invalid user test 192.168.100.31 port 51387 [preauth]
+Nov 08 18:06:03 ubuntuserver sshd-session[1649]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:03 ubuntuserver sshd-session[1671]: Failed password for invalid user test from 192.168.100.31 port 51400 ssh2
+Nov 08 18:06:03 ubuntuserver sshd-session[1675]: Failed password for root from 192.168.100.31 port 51405 ssh2
+Nov 08 18:06:03 ubuntuserver unix_chkpwd[1676]: password check failed for user (root)
+Nov 08 18:06:03 ubuntuserver sshd-session[1675]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:06:03 ubuntuserver sshd-session[1657]: Connection closed by invalid user user 192.168.100.31 port 51394 [preauth]
+Nov 08 18:06:03 ubuntuserver unix_chkpwd[1686]: password check failed for user (kamil)
+Nov 08 18:06:03 ubuntuserver sshd-session[1685]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=kamil
+Nov 08 18:06:04 ubuntuserver sshd-session[1692]: Invalid user oracle from 192.168.100.31 port 51419
+Nov 08 18:06:04 ubuntuserver sshd-session[1692]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:04 ubuntuserver sshd-session[1692]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:04 ubuntuserver sshd-session[1681]: Failed password for root from 192.168.100.31 port 51411 ssh2
+Nov 08 18:06:04 ubuntuserver sshd-session[1675]: Failed password for root from 192.168.100.31 port 51405 ssh2
+Nov 08 18:06:04 ubuntuserver sshd-session[1671]: Connection closed by invalid user test 192.168.100.31 port 51400 [preauth]
+Nov 08 18:06:04 ubuntuserver sshd-session[1685]: Failed password for kamil from 192.168.100.31 port 51415 ssh2
+Nov 08 18:06:05 ubuntuserver sshd-session[1701]: Invalid user user from 192.168.100.31 port 51423
+Nov 08 18:06:05 ubuntuserver sshd-session[1701]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:05 ubuntuserver sshd-session[1701]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:05 ubuntuserver sshd-session[1675]: Connection closed by authenticating user root 192.168.100.31 port 51405 [preauth]
+Nov 08 18:06:05 ubuntuserver sshd-session[1675]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=root
+Nov 08 18:06:06 ubuntuserver sshd-session[1710]: Invalid user test from 192.168.100.31 port 51426
+Nov 08 18:06:06 ubuntuserver sshd-session[1710]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:06 ubuntuserver sshd-session[1710]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:06 ubuntuserver sshd-session[1692]: Failed password for invalid user oracle from 192.168.100.31 port 51419 ssh2
+Nov 08 18:06:06 ubuntuserver sshd-session[1701]: Failed password for invalid user user from 192.168.100.31 port 51423 ssh2
+Nov 08 18:06:06 ubuntuserver sshd-session[1701]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:06 ubuntuserver sshd-session[1701]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:06 ubuntuserver sshd-session[1681]: Connection closed by authenticating user root 192.168.100.31 port 51411 [preauth]
+Nov 08 18:06:06 ubuntuserver sshd-session[1685]: Connection closed by authenticating user kamil 192.168.100.31 port 51415 [preauth]
+Nov 08 18:06:07 ubuntuserver sshd-session[1715]: Invalid user postgres from 192.168.100.31 port 51431
+Nov 08 18:06:07 ubuntuserver sshd-session[1715]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:07 ubuntuserver sshd-session[1715]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:07 ubuntuserver sshd-session[1692]: Connection closed by invalid user oracle 192.168.100.31 port 51419 [preauth]
+Nov 08 18:06:07 ubuntuserver unix_chkpwd[1722]: password check failed for user (kamil)
+Nov 08 18:06:07 ubuntuserver sshd-session[1721]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31  user=kamil
+Nov 08 18:06:08 ubuntuserver sshd-session[1710]: Failed password for invalid user test from 192.168.100.31 port 51426 ssh2
+Nov 08 18:06:08 ubuntuserver sshd-session[1724]: Invalid user postgres from 192.168.100.31 port 51442
+Nov 08 18:06:08 ubuntuserver sshd-session[1724]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:08 ubuntuserver sshd-session[1724]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:08 ubuntuserver sshd-session[1701]: Failed password for invalid user user from 192.168.100.31 port 51423 ssh2
+Nov 08 18:06:08 ubuntuserver sshd-session[1710]: Connection closed by invalid user test 192.168.100.31 port 51426 [preauth]
+Nov 08 18:06:08 ubuntuserver sshd-session[1715]: Failed password for invalid user postgres from 192.168.100.31 port 51431 ssh2
+Nov 08 18:06:09 ubuntuserver sshd-session[1730]: Invalid user oracle from 192.168.100.31 port 51445
+Nov 08 18:06:09 ubuntuserver sshd-session[1730]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:09 ubuntuserver sshd-session[1730]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:09 ubuntuserver sshd-session[1721]: Failed password for kamil from 192.168.100.31 port 51438 ssh2
+Nov 08 18:06:10 ubuntuserver sshd-session[1730]: Failed password for invalid user oracle from 192.168.100.31 port 51445 ssh2
+Nov 08 18:06:10 ubuntuserver sshd-session[1730]: pam_unix(sshd:auth): check pass; user unknown
+Nov 08 18:06:10 ubuntuserver sshd-session[1730]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:10 ubuntuserver sshd-session[1701]: Connection closed by invalid user user 192.168.100.31 port 51423 [preauth]
+Nov 08 18:06:10 ubuntuserver sshd-session[1701]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:06:10 ubuntuserver sshd-session[1724]: Failed password for invalid user postgres from 192.168.100.31 port 51442 ssh2
+Nov 08 18:06:10 ubuntuserver sshd-session[1715]: Connection closed by invalid user postgres 192.168.100.31 port 51431 [preauth]
+Nov 08 18:06:10 ubuntuserver sshd-session[1721]: Connection closed by authenticating user kamil 192.168.100.31 port 51438 [preauth]
+Nov 08 18:06:11 ubuntuserver sshd-session[1730]: Failed password for invalid user oracle from 192.168.100.31 port 51445 ssh2
+Nov 08 18:06:11 ubuntuserver sshd-session[1724]: Connection closed by invalid user postgres 192.168.100.31 port 51442 [preauth]
+Nov 08 18:06:13 ubuntuserver sshd-session[1730]: Connection closed by invalid user oracle 192.168.100.31 port 51445 [preauth]
+Nov 08 18:06:13 ubuntuserver sshd-session[1730]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.31 
+Nov 08 18:17:01 ubuntuserver CRON[1734]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 18:17:02 ubuntuserver CRON[1734]: pam_unix(cron:session): session closed for user root
+Nov 08 19:17:01 ubuntuserver CRON[1741]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 19:17:02 ubuntuserver CRON[1741]: pam_unix(cron:session): session closed for user root
+Nov 08 20:17:01 ubuntuserver CRON[1745]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 20:17:02 ubuntuserver CRON[1745]: pam_unix(cron:session): session closed for user root
+Nov 08 21:17:01 ubuntuserver CRON[1751]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 21:17:02 ubuntuserver CRON[1751]: pam_unix(cron:session): session closed for user root
+Nov 08 22:17:01 ubuntuserver CRON[1755]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 22:17:02 ubuntuserver CRON[1755]: pam_unix(cron:session): session closed for user root
+Nov 08 23:17:01 ubuntuserver CRON[1764]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 08 23:17:02 ubuntuserver CRON[1764]: pam_unix(cron:session): session closed for user root
+Nov 09 00:17:01 ubuntuserver CRON[1767]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 00:17:02 ubuntuserver CRON[1767]: pam_unix(cron:session): session closed for user root
+Nov 09 01:17:01 ubuntuserver CRON[1774]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 01:17:02 ubuntuserver CRON[1774]: pam_unix(cron:session): session closed for user root
+Nov 09 02:17:01 ubuntuserver CRON[1780]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 02:17:02 ubuntuserver CRON[1780]: pam_unix(cron:session): session closed for user root
+Nov 09 03:17:01 ubuntuserver CRON[1787]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 03:17:02 ubuntuserver CRON[1787]: pam_unix(cron:session): session closed for user root
+Nov 09 04:17:01 ubuntuserver CRON[1793]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 04:17:02 ubuntuserver CRON[1793]: pam_unix(cron:session): session closed for user root
+Nov 09 05:17:01 ubuntuserver CRON[1799]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 05:17:02 ubuntuserver CRON[1799]: pam_unix(cron:session): session closed for user root
+Nov 09 06:17:01 ubuntuserver CRON[1806]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 06:17:02 ubuntuserver CRON[1806]: pam_unix(cron:session): session closed for user root
+Nov 09 07:17:01 ubuntuserver CRON[1809]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 07:17:02 ubuntuserver CRON[1809]: pam_unix(cron:session): session closed for user root
+Nov 09 08:17:01 ubuntuserver CRON[1815]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 08:17:02 ubuntuserver CRON[1815]: pam_unix(cron:session): session closed for user root
+Nov 09 08:55:30 ubuntuserver sshd-session[1819]: Accepted password for kamil from 192.168.100.5 port 39966 ssh2
+Nov 09 08:55:30 ubuntuserver sshd-session[1819]: pam_unix(sshd:session): session opened for user kamil(uid=1000) by kamil(uid=0)
+Nov 09 08:55:30 ubuntuserver systemd-logind[612]: New session 3 of user kamil.
+Nov 09 08:55:30 ubuntuserver systemd[1]: Started session-3.scope - Session 3 of User kamil.
+Nov 09 09:17:01 ubuntuserver CRON[1825]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 09:17:02 ubuntuserver CRON[1825]: pam_unix(cron:session): session closed for user root
+Nov 09 09:30:44 ubuntuserver sshd-session[1833]: Accepted password for anna from 192.168.100.40 port 48205 ssh2
+Nov 09 09:30:44 ubuntuserver sshd-session[1833]: pam_unix(sshd:session): session opened for user anna(uid=1001) by anna(uid=0)
+Nov 09 09:30:44 ubuntuserver systemd-logind[612]: New session 6 of user anna.
+Nov 09 09:30:44 ubuntuserver systemd[1]: Started session-6.scope - Session 6 of User anna.
+Nov 09 09:35:30 ubuntuserver sshd-session[1819]: Received disconnect from 192.168.100.5 port 39966:11: disconnected by user
+Nov 09 09:35:30 ubuntuserver sshd-session[1819]: Disconnected from user kamil 192.168.100.5 port 39966
+Nov 09 09:35:30 ubuntuserver sshd-session[1819]: pam_unix(sshd:session): session closed for user kamil
+Nov 09 09:35:30 ubuntuserver systemd-logind[612]: Session 3 logged out. Waiting for processes to exit.
+Nov 09 09:35:30 ubuntuserver systemd-logind[612]: Removed session 3.
+Nov 09 10:17:01 ubuntuserver CRON[1836]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 10:17:02 ubuntuserver CRON[1836]: pam_unix(cron:session): session closed for user root
+Nov 09 10:20:44 ubuntuserver sshd-session[1833]: Received disconnect from 192.168.100.40 port 48205:11: disconnected by user
+Nov 09 10:20:44 ubuntuserver sshd-session[1833]: Disconnected from user anna 192.168.100.40 port 48205
+Nov 09 10:20:44 ubuntuserver sshd-session[1833]: pam_unix(sshd:session): session closed for user anna
+Nov 09 10:20:44 ubuntuserver systemd-logind[612]: Session 6 logged out. Waiting for processes to exit.
+Nov 09 10:20:44 ubuntuserver systemd-logind[612]: Removed session 6.
+Nov 09 11:17:01 ubuntuserver CRON[1843]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 11:17:02 ubuntuserver CRON[1843]: pam_unix(cron:session): session closed for user root
+Nov 09 11:32:40 ubuntuserver unix_chkpwd[1850]: password check failed for user (kamil)
+Nov 09 11:32:40 ubuntuserver sshd-session[1849]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:40 ubuntuserver unix_chkpwd[1859]: password check failed for user (kamil)
+Nov 09 11:32:40 ubuntuserver sshd-session[1858]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:41 ubuntuserver sshd-session[1849]: Failed password for kamil from 192.168.100.20 port 48379 ssh2
+Nov 09 11:32:41 ubuntuserver unix_chkpwd[1850]: password check failed for user (kamil)
+Nov 09 11:32:41 ubuntuserver sshd-session[1849]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:41 ubuntuserver unix_chkpwd[1863]: password check failed for user (kamil)
+Nov 09 11:32:41 ubuntuserver sshd-session[1862]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:42 ubuntuserver unix_chkpwd[1868]: password check failed for user (kamil)
+Nov 09 11:32:42 ubuntuserver sshd-session[1867]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:42 ubuntuserver sshd-session[1858]: Failed password for kamil from 192.168.100.20 port 48386 ssh2
+Nov 09 11:32:42 ubuntuserver sshd-session[1849]: Failed password for kamil from 192.168.100.20 port 48379 ssh2
+Nov 09 11:32:43 ubuntuserver sshd-session[1862]: Failed password for kamil from 192.168.100.20 port 48391 ssh2
+Nov 09 11:32:43 ubuntuserver unix_chkpwd[1863]: password check failed for user (kamil)
+Nov 09 11:32:43 ubuntuserver sshd-session[1862]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:43 ubuntuserver unix_chkpwd[1872]: password check failed for user (kamil)
+Nov 09 11:32:43 ubuntuserver sshd-session[1871]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:44 ubuntuserver sshd-session[1849]: Connection closed by authenticating user kamil 192.168.100.20 port 48379 [preauth]
+Nov 09 11:32:44 ubuntuserver sshd-session[1849]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:44 ubuntuserver sshd-session[1862]: Failed password for kamil from 192.168.100.20 port 48391 ssh2
+Nov 09 11:32:44 ubuntuserver sshd-session[1867]: Failed password for kamil from 192.168.100.20 port 48397 ssh2
+Nov 09 11:32:44 ubuntuserver unix_chkpwd[1881]: password check failed for user (kamil)
+Nov 09 11:32:44 ubuntuserver sshd-session[1880]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:45 ubuntuserver sshd-session[1858]: Connection closed by authenticating user kamil 192.168.100.20 port 48386 [preauth]
+Nov 09 11:32:45 ubuntuserver sshd-session[1867]: Connection closed by authenticating user kamil 192.168.100.20 port 48397 [preauth]
+Nov 09 11:32:45 ubuntuserver unix_chkpwd[1888]: password check failed for user (kamil)
+Nov 09 11:32:45 ubuntuserver sshd-session[1887]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:45 ubuntuserver sshd-session[1871]: Failed password for kamil from 192.168.100.20 port 48402 ssh2
+Nov 09 11:32:45 ubuntuserver unix_chkpwd[1872]: password check failed for user (kamil)
+Nov 09 11:32:45 ubuntuserver sshd-session[1871]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:46 ubuntuserver unix_chkpwd[1893]: password check failed for user (kamil)
+Nov 09 11:32:46 ubuntuserver sshd-session[1892]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:46 ubuntuserver sshd-session[1880]: Failed password for kamil from 192.168.100.20 port 48409 ssh2
+Nov 09 11:32:46 ubuntuserver unix_chkpwd[1881]: password check failed for user (kamil)
+Nov 09 11:32:46 ubuntuserver sshd-session[1880]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:46 ubuntuserver sshd-session[1862]: Connection closed by authenticating user kamil 192.168.100.20 port 48391 [preauth]
+Nov 09 11:32:46 ubuntuserver sshd-session[1862]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:46 ubuntuserver unix_chkpwd[1898]: password check failed for user (kamil)
+Nov 09 11:32:46 ubuntuserver sshd-session[1897]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:46 ubuntuserver sshd-session[1887]: Failed password for kamil from 192.168.100.20 port 48415 ssh2
+Nov 09 11:32:47 ubuntuserver sshd-session[1871]: Failed password for kamil from 192.168.100.20 port 48402 ssh2
+Nov 09 11:32:47 ubuntuserver sshd-session[1892]: Failed password for kamil from 192.168.100.20 port 48417 ssh2
+Nov 09 11:32:47 ubuntuserver unix_chkpwd[1893]: password check failed for user (kamil)
+Nov 09 11:32:47 ubuntuserver sshd-session[1892]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:47 ubuntuserver sshd-session[1871]: Connection closed by authenticating user kamil 192.168.100.20 port 48402 [preauth]
+Nov 09 11:32:47 ubuntuserver sshd-session[1871]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:47 ubuntuserver sshd-session[1887]: Connection closed by authenticating user kamil 192.168.100.20 port 48415 [preauth]
+Nov 09 11:32:47 ubuntuserver sshd-session[1880]: Failed password for kamil from 192.168.100.20 port 48409 ssh2
+Nov 09 11:32:47 ubuntuserver unix_chkpwd[1907]: password check failed for user (kamil)
+Nov 09 11:32:47 ubuntuserver sshd-session[1906]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:48 ubuntuserver sshd-session[1897]: Failed password for kamil from 192.168.100.20 port 48424 ssh2
+Nov 09 11:32:48 ubuntuserver unix_chkpwd[1898]: password check failed for user (kamil)
+Nov 09 11:32:48 ubuntuserver sshd-session[1897]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:48 ubuntuserver sshd-session[1880]: Connection closed by authenticating user kamil 192.168.100.20 port 48409 [preauth]
+Nov 09 11:32:48 ubuntuserver sshd-session[1880]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:48 ubuntuserver sshd-session[1906]: Failed password for kamil from 192.168.100.20 port 48426 ssh2
+Nov 09 11:32:48 ubuntuserver unix_chkpwd[1907]: password check failed for user (kamil)
+Nov 09 11:32:48 ubuntuserver sshd-session[1906]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:48 ubuntuserver unix_chkpwd[1913]: password check failed for user (kamil)
+Nov 09 11:32:48 ubuntuserver sshd-session[1912]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:49 ubuntuserver sshd-session[1892]: Failed password for kamil from 192.168.100.20 port 48417 ssh2
+Nov 09 11:32:49 ubuntuserver unix_chkpwd[1922]: password check failed for user (kamil)
+Nov 09 11:32:49 ubuntuserver sshd-session[1921]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:49 ubuntuserver sshd-session[1897]: Failed password for kamil from 192.168.100.20 port 48424 ssh2
+Nov 09 11:32:50 ubuntuserver sshd-session[1912]: Failed password for kamil from 192.168.100.20 port 48431 ssh2
+Nov 09 11:32:50 ubuntuserver unix_chkpwd[1913]: password check failed for user (kamil)
+Nov 09 11:32:50 ubuntuserver sshd-session[1912]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:50 ubuntuserver unix_chkpwd[1930]: password check failed for user (kamil)
+Nov 09 11:32:50 ubuntuserver sshd-session[1929]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:50 ubuntuserver sshd-session[1906]: Failed password for kamil from 192.168.100.20 port 48426 ssh2
+Nov 09 11:32:51 ubuntuserver unix_chkpwd[1937]: password check failed for user (kamil)
+Nov 09 11:32:51 ubuntuserver sshd-session[1936]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:51 ubuntuserver sshd-session[1906]: Connection closed by authenticating user kamil 192.168.100.20 port 48426 [preauth]
+Nov 09 11:32:51 ubuntuserver sshd-session[1906]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:51 ubuntuserver sshd-session[1921]: Failed password for kamil from 192.168.100.20 port 48435 ssh2
+Nov 09 11:32:51 ubuntuserver sshd-session[1929]: Failed password for kamil from 192.168.100.20 port 48439 ssh2
+Nov 09 11:32:51 ubuntuserver sshd-session[1897]: Connection closed by authenticating user kamil 192.168.100.20 port 48424 [preauth]
+Nov 09 11:32:51 ubuntuserver sshd-session[1897]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:51 ubuntuserver sshd-session[1912]: Failed password for kamil from 192.168.100.20 port 48431 ssh2
+Nov 09 11:32:51 ubuntuserver sshd-session[1892]: Connection closed by authenticating user kamil 192.168.100.20 port 48417 [preauth]
+Nov 09 11:32:51 ubuntuserver sshd-session[1892]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:51 ubuntuserver unix_chkpwd[1940]: password check failed for user (kamil)
+Nov 09 11:32:51 ubuntuserver sshd-session[1939]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:52 ubuntuserver sshd-session[1921]: Connection closed by authenticating user kamil 192.168.100.20 port 48435 [preauth]
+Nov 09 11:32:52 ubuntuserver sshd-session[1936]: Failed password for kamil from 192.168.100.20 port 48443 ssh2
+Nov 09 11:32:52 ubuntuserver sshd-session[1936]: Connection closed by authenticating user kamil 192.168.100.20 port 48443 [preauth]
+Nov 09 11:32:52 ubuntuserver sshd-session[1912]: Connection closed by authenticating user kamil 192.168.100.20 port 48431 [preauth]
+Nov 09 11:32:52 ubuntuserver sshd-session[1912]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:53 ubuntuserver unix_chkpwd[1945]: password check failed for user (kamil)
+Nov 09 11:32:53 ubuntuserver sshd-session[1944]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:53 ubuntuserver sshd-session[1929]: Connection closed by authenticating user kamil 192.168.100.20 port 48439 [preauth]
+Nov 09 11:32:53 ubuntuserver sshd-session[1939]: Failed password for kamil from 192.168.100.20 port 48448 ssh2
+Nov 09 11:32:54 ubuntuserver unix_chkpwd[1952]: password check failed for user (kamil)
+Nov 09 11:32:54 ubuntuserver sshd-session[1951]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:54 ubuntuserver sshd-session[1944]: Failed password for kamil from 192.168.100.20 port 48453 ssh2
+Nov 09 11:32:54 ubuntuserver unix_chkpwd[1945]: password check failed for user (kamil)
+Nov 09 11:32:54 ubuntuserver sshd-session[1944]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:54 ubuntuserver unix_chkpwd[1961]: password check failed for user (kamil)
+Nov 09 11:32:54 ubuntuserver sshd-session[1960]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:55 ubuntuserver sshd-session[1944]: Failed password for kamil from 192.168.100.20 port 48453 ssh2
+Nov 09 11:32:55 ubuntuserver unix_chkpwd[1968]: password check failed for user (kamil)
+Nov 09 11:32:55 ubuntuserver sshd-session[1967]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:55 ubuntuserver sshd-session[1951]: Failed password for kamil from 192.168.100.20 port 48459 ssh2
+Nov 09 11:32:55 ubuntuserver sshd-session[1939]: Connection closed by authenticating user kamil 192.168.100.20 port 48448 [preauth]
+Nov 09 11:32:56 ubuntuserver sshd-session[1960]: Failed password for kamil from 192.168.100.20 port 48461 ssh2
+Nov 09 11:32:56 ubuntuserver unix_chkpwd[1961]: password check failed for user (kamil)
+Nov 09 11:32:56 ubuntuserver sshd-session[1960]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:56 ubuntuserver sshd-session[1944]: Connection closed by authenticating user kamil 192.168.100.20 port 48453 [preauth]
+Nov 09 11:32:56 ubuntuserver sshd-session[1944]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:56 ubuntuserver unix_chkpwd[1972]: password check failed for user (kamil)
+Nov 09 11:32:56 ubuntuserver sshd-session[1971]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:56 ubuntuserver sshd-session[1951]: Connection closed by authenticating user kamil 192.168.100.20 port 48459 [preauth]
+Nov 09 11:32:57 ubuntuserver sshd-session[1960]: Failed password for kamil from 192.168.100.20 port 48461 ssh2
+Nov 09 11:32:57 ubuntuserver unix_chkpwd[1979]: password check failed for user (kamil)
+Nov 09 11:32:57 ubuntuserver sshd-session[1978]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:57 ubuntuserver sshd-session[1967]: Failed password for kamil from 192.168.100.20 port 48465 ssh2
+Nov 09 11:32:57 ubuntuserver unix_chkpwd[1968]: password check failed for user (kamil)
+Nov 09 11:32:57 ubuntuserver sshd-session[1967]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:57 ubuntuserver sshd-session[1971]: Failed password for kamil from 192.168.100.20 port 48472 ssh2
+Nov 09 11:32:58 ubuntuserver unix_chkpwd[1982]: password check failed for user (kamil)
+Nov 09 11:32:58 ubuntuserver sshd-session[1981]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:58 ubuntuserver sshd-session[1978]: Failed password for kamil from 192.168.100.20 port 48479 ssh2
+Nov 09 11:32:58 ubuntuserver sshd-session[1960]: Connection closed by authenticating user kamil 192.168.100.20 port 48461 [preauth]
+Nov 09 11:32:58 ubuntuserver sshd-session[1960]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:59 ubuntuserver sshd-session[1967]: Failed password for kamil from 192.168.100.20 port 48465 ssh2
+Nov 09 11:32:59 ubuntuserver unix_chkpwd[1989]: password check failed for user (kamil)
+Nov 09 11:32:59 ubuntuserver sshd-session[1988]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:32:59 ubuntuserver sshd-session[1971]: Connection closed by authenticating user kamil 192.168.100.20 port 48472 [preauth]
+Nov 09 11:33:00 ubuntuserver sshd-session[1967]: Connection closed by authenticating user kamil 192.168.100.20 port 48465 [preauth]
+Nov 09 11:33:00 ubuntuserver sshd-session[1967]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:00 ubuntuserver unix_chkpwd[1994]: password check failed for user (kamil)
+Nov 09 11:33:00 ubuntuserver sshd-session[1993]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:00 ubuntuserver sshd-session[1981]: Failed password for kamil from 192.168.100.20 port 48486 ssh2
+Nov 09 11:33:00 ubuntuserver unix_chkpwd[1982]: password check failed for user (kamil)
+Nov 09 11:33:00 ubuntuserver sshd-session[1981]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:00 ubuntuserver sshd-session[1978]: Connection closed by authenticating user kamil 192.168.100.20 port 48479 [preauth]
+Nov 09 11:33:01 ubuntuserver unix_chkpwd[2003]: password check failed for user (kamil)
+Nov 09 11:33:01 ubuntuserver sshd-session[2002]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:01 ubuntuserver sshd-session[1988]: Failed password for kamil from 192.168.100.20 port 48492 ssh2
+Nov 09 11:33:01 ubuntuserver sshd-session[1981]: Failed password for kamil from 192.168.100.20 port 48486 ssh2
+Nov 09 11:33:01 ubuntuserver unix_chkpwd[2007]: password check failed for user (kamil)
+Nov 09 11:33:01 ubuntuserver sshd-session[2006]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:01 ubuntuserver sshd-session[1993]: Failed password for kamil from 192.168.100.20 port 48495 ssh2
+Nov 09 11:33:01 ubuntuserver unix_chkpwd[1994]: password check failed for user (kamil)
+Nov 09 11:33:01 ubuntuserver sshd-session[1993]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:02 ubuntuserver sshd-session[1988]: Connection closed by authenticating user kamil 192.168.100.20 port 48492 [preauth]
+Nov 09 11:33:02 ubuntuserver unix_chkpwd[2014]: password check failed for user (kamil)
+Nov 09 11:33:02 ubuntuserver sshd-session[2013]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:02 ubuntuserver sshd-session[2002]: Failed password for kamil from 192.168.100.20 port 48498 ssh2
+Nov 09 11:33:02 ubuntuserver sshd-session[1981]: Connection closed by authenticating user kamil 192.168.100.20 port 48486 [preauth]
+Nov 09 11:33:02 ubuntuserver sshd-session[1981]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:03 ubuntuserver sshd-session[1993]: Failed password for kamil from 192.168.100.20 port 48495 ssh2
+Nov 09 11:33:03 ubuntuserver unix_chkpwd[2017]: password check failed for user (kamil)
+Nov 09 11:33:03 ubuntuserver sshd-session[2016]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:03 ubuntuserver sshd-session[2006]: Failed password for kamil from 192.168.100.20 port 48501 ssh2
+Nov 09 11:33:03 ubuntuserver unix_chkpwd[2007]: password check failed for user (kamil)
+Nov 09 11:33:03 ubuntuserver sshd-session[2006]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:04 ubuntuserver sshd-session[2013]: Failed password for kamil from 192.168.100.20 port 48505 ssh2
+Nov 09 11:33:04 ubuntuserver unix_chkpwd[2024]: password check failed for user (kamil)
+Nov 09 11:33:04 ubuntuserver sshd-session[2023]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:04 ubuntuserver sshd-session[2016]: Failed password for kamil from 192.168.100.20 port 48507 ssh2
+Nov 09 11:33:04 ubuntuserver sshd-session[2006]: Failed password for kamil from 192.168.100.20 port 48501 ssh2
+Nov 09 11:33:05 ubuntuserver sshd-session[2002]: Connection closed by authenticating user kamil 192.168.100.20 port 48498 [preauth]
+Nov 09 11:33:05 ubuntuserver sshd-session[1993]: Connection closed by authenticating user kamil 192.168.100.20 port 48495 [preauth]
+Nov 09 11:33:05 ubuntuserver sshd-session[1993]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:05 ubuntuserver unix_chkpwd[2028]: password check failed for user (kamil)
+Nov 09 11:33:05 ubuntuserver sshd-session[2027]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:05 ubuntuserver sshd-session[2016]: Connection closed by authenticating user kamil 192.168.100.20 port 48507 [preauth]
+Nov 09 11:33:06 ubuntuserver sshd-session[2013]: Connection closed by authenticating user kamil 192.168.100.20 port 48505 [preauth]
+Nov 09 11:33:06 ubuntuserver unix_chkpwd[2034]: password check failed for user (kamil)
+Nov 09 11:33:06 ubuntuserver sshd-session[2033]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:06 ubuntuserver sshd-session[2006]: Connection closed by authenticating user kamil 192.168.100.20 port 48501 [preauth]
+Nov 09 11:33:06 ubuntuserver sshd-session[2006]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:06 ubuntuserver sshd-session[2027]: Failed password for kamil from 192.168.100.20 port 48514 ssh2
+Nov 09 11:33:06 ubuntuserver sshd-session[2023]: Failed password for kamil from 192.168.100.20 port 48510 ssh2
+Nov 09 11:33:07 ubuntuserver unix_chkpwd[2040]: password check failed for user (kamil)
+Nov 09 11:33:07 ubuntuserver sshd-session[2039]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:07 ubuntuserver sshd-session[2023]: Connection closed by authenticating user kamil 192.168.100.20 port 48510 [preauth]
+Nov 09 11:33:07 ubuntuserver unix_chkpwd[2049]: password check failed for user (kamil)
+Nov 09 11:33:07 ubuntuserver sshd-session[2048]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:08 ubuntuserver sshd-session[2033]: Failed password for kamil from 192.168.100.20 port 48518 ssh2
+Nov 09 11:33:08 ubuntuserver sshd-session[2027]: Connection closed by authenticating user kamil 192.168.100.20 port 48514 [preauth]
+Nov 09 11:33:09 ubuntuserver sshd-session[2039]: Failed password for kamil from 192.168.100.20 port 48520 ssh2
+Nov 09 11:33:09 ubuntuserver sshd-session[2048]: Failed password for kamil from 192.168.100.20 port 48527 ssh2
+Nov 09 11:33:10 ubuntuserver sshd-session[2039]: Connection closed by authenticating user kamil 192.168.100.20 port 48520 [preauth]
+Nov 09 11:33:10 ubuntuserver sshd-session[2033]: Connection closed by authenticating user kamil 192.168.100.20 port 48518 [preauth]
+Nov 09 11:33:10 ubuntuserver sshd-session[2051]: Accepted password for kamil from 192.168.100.20 port 48530 ssh2
+Nov 09 11:33:10 ubuntuserver sshd-session[2051]: pam_unix(sshd:session): session opened for user kamil(uid=1000) by kamil(uid=0)
+Nov 09 11:33:10 ubuntuserver systemd-logind[612]: New session 7 of user kamil.
+Nov 09 11:33:10 ubuntuserver systemd[1]: Started session-7.scope - Session 7 of User kamil.
+Nov 09 11:33:11 ubuntuserver unix_chkpwd[2061]: password check failed for user (kamil)
+Nov 09 11:33:11 ubuntuserver sshd-session[2060]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:11 ubuntuserver sshd-session[2048]: Connection closed by authenticating user kamil 192.168.100.20 port 48527 [preauth]
+Nov 09 11:33:12 ubuntuserver unix_chkpwd[2064]: password check failed for user (kamil)
+Nov 09 11:33:12 ubuntuserver sshd-session[2063]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:12 ubuntuserver sshd-session[2060]: Failed password for kamil from 192.168.100.20 port 48537 ssh2
+Nov 09 11:33:13 ubuntuserver sshd-session[2051]: Received disconnect from 192.168.100.20 port 48530:11: Bye Bye
+Nov 09 11:33:13 ubuntuserver sshd-session[2051]: Disconnected from user kamil 192.168.100.20 port 48530
+Nov 09 11:33:13 ubuntuserver sshd-session[2051]: pam_unix(sshd:session): session closed for user kamil
+Nov 09 11:33:13 ubuntuserver systemd-logind[612]: Session 7 logged out. Waiting for processes to exit.
+Nov 09 11:33:13 ubuntuserver sshd-session[2063]: Failed password for kamil from 192.168.100.20 port 48542 ssh2
+Nov 09 11:33:13 ubuntuserver systemd-logind[612]: Removed session 7.
+Nov 09 11:33:13 ubuntuserver unix_chkpwd[2073]: password check failed for user (kamil)
+Nov 09 11:33:13 ubuntuserver sshd-session[2072]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=kamil
+Nov 09 11:33:15 ubuntuserver sshd-session[2060]: Connection closed by authenticating user kamil 192.168.100.20 port 48537 [preauth]
+Nov 09 11:33:15 ubuntuserver sshd-session[2072]: Failed password for kamil from 192.168.100.20 port 48549 ssh2
+Nov 09 11:33:15 ubuntuserver sshd-session[2063]: Connection closed by authenticating user kamil 192.168.100.20 port 48542 [preauth]
+Nov 09 11:33:17 ubuntuserver sshd-session[2072]: Connection closed by authenticating user kamil 192.168.100.20 port 48549 [preauth]
+Nov 09 12:17:01 ubuntuserver CRON[2078]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 12:17:02 ubuntuserver CRON[2078]: pam_unix(cron:session): session closed for user root
+Nov 09 13:17:01 ubuntuserver CRON[2084]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 13:17:02 ubuntuserver CRON[2084]: pam_unix(cron:session): session closed for user root
+Nov 09 14:17:01 ubuntuserver CRON[2087]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 14:17:02 ubuntuserver CRON[2087]: pam_unix(cron:session): session closed for user root
+Nov 09 14:20:10 ubuntuserver sshd-session[2091]: Accepted password for kamil from 192.168.100.5 port 39972 ssh2
+Nov 09 14:20:10 ubuntuserver sshd-session[2091]: pam_unix(sshd:session): session opened for user kamil(uid=1000) by kamil(uid=0)
+Nov 09 14:20:10 ubuntuserver systemd-logind[612]: New session 4 of user kamil.
+Nov 09 14:20:10 ubuntuserver systemd[1]: Started session-4.scope - Session 4 of User kamil.
+Nov 09 14:20:35 ubuntuserver sudo[2092]: kamil : TTY=pts/0 ; PWD=/home/kamil ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 09 14:20:35 ubuntuserver sudo[2092]: pam_unix(sudo:session): session opened for user root(uid=0) by kamil(uid=1000)
+Nov 09 14:20:41 ubuntuserver sudo[2092]: pam_unix(sudo:session): session closed for user root
+Nov 09 14:30:10 ubuntuserver sshd-session[2091]: Received disconnect from 192.168.100.5 port 39972:11: disconnected by user
+Nov 09 14:30:10 ubuntuserver sshd-session[2091]: Disconnected from user kamil 192.168.100.5 port 39972
+Nov 09 14:30:10 ubuntuserver sshd-session[2091]: pam_unix(sshd:session): session closed for user kamil
+Nov 09 14:30:10 ubuntuserver systemd-logind[612]: Session 4 logged out. Waiting for processes to exit.
+Nov 09 14:30:10 ubuntuserver systemd-logind[612]: Removed session 4.
+Nov 09 15:17:01 ubuntuserver CRON[2095]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 15:17:02 ubuntuserver CRON[2095]: pam_unix(cron:session): session closed for user root
+Nov 09 16:17:01 ubuntuserver CRON[2098]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Nov 09 16:17:02 ubuntuserver CRON[2098]: pam_unix(cron:session): session closed for user root

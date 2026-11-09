@@ -1,6 +1,5 @@
-POSSIBLE COMPROMISE: 198.51.100.23 logged in as 'admin' after 25 attempts
-POSSIBLE COMPROMISE: 203.0.113.99 logged in as 'root' after 8 attempts
+[HIGH] POSSIBLE COMPROMISE [MITRE: T1078 - Valid Accounts]: 192.168.100.20 logged in as 'kamil' after 47 attempts | Recommended action: sudo ufw deny from 192.168.100.20
 
-SUSPICIOUS ACTIVITY: 203.0.113.45 failed to connect 40 times
-SUSPICIOUS ACTIVITY: 198.51.100.23 failed to connect 25 times
-SUSPICIOUS ACTIVITY: 203.0.113.99 failed to connect 8 times
+[MEDIUM] SUSPICIOUS ACTIVITY [MITRE: T1110.001 - Password Guessing]: 192.168.100.31 failed to connect 90 times | Recommended action: sudo ufw deny from 192.168.100.31
+[MEDIUM] SUSPICIOUS ACTIVITY [MITRE: T1110.001 - Password Guessing]: 192.168.100.20 failed to connect 50 times | Recommended action: sudo ufw deny from 192.168.100.20
+[MEDIUM] SUSPICIOUS ACTIVITY [MITRE: T1110.001 - Password Guessing]: 203.0.113.50 failed to connect 14 times | Recommended action: sudo ufw deny from 203.0.113.50
