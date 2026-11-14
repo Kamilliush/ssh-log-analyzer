@@ -32,5 +32,11 @@
             "failed_attempts": 50,
             "recommended_action": "sudo ufw deny from 192.168.100.20"
         }
-    ]
+    ],
+    "targeted_users": {
+        "anna": 3,
+        "root": 12,
+        "unknown": 85,
+        "kamil": 58
+    }
 }

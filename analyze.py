@@ -34,6 +34,7 @@ def analyze_logs(lines, THRESHOLD, WINDOW = 60):
     ip_timestamps = {}
     max_window_attempts = {}
     compromises = []
+    targeted_users = {}
     for l in lines:
         parsed = parseLine(l)
         if not parsed:
@@ -48,6 +49,8 @@ def analyze_logs(lines, THRESHOLD, WINDOW = 60):
             ip_timestamps[ip].append(timestamp)
 
             ip_timestamps[ip] = [t for t in ip_timestamps[ip] if (timestamp - t).total_seconds() <= WINDOW]
+
+            targeted_users[user] = targeted_users.get(user, 0) + 1
 
             current_count = len(ip_timestamps[ip])
             if current_count > max_window_attempts.get(ip, 0):
@@ -80,7 +83,7 @@ def analyze_logs(lines, THRESHOLD, WINDOW = 60):
                 "recommended_action": f"sudo ufw deny from {ip}",
             })
 
-    return compromises, suspicious_activity
+    return compromises, suspicious_activity, targeted_users
 
 def main():
 
@@ -96,7 +99,7 @@ def main():
 
 
     with open(args.logfile) as f:
-        compromises, suspicious_activity = analyze_logs(f, THRESHOLD, WINDOW)
+        compromises, suspicious_activity, targeted_users = analyze_logs(f, THRESHOLD, WINDOW)
         report_data = {
             "summary": {
                 "logfile": args.logfile,
@@ -105,6 +108,7 @@ def main():
             },
             "compromises": compromises,
             "suspicious_activity": suspicious_activity,
+            "targeted_users": targeted_users,  # O TO NOWE!
         }
     with open(args.output, "w") as out:
         json.dump(report_data, out, indent=4)
