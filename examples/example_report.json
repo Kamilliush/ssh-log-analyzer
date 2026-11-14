@@ -1,6 +1,9 @@
 {
     "summary": {
         "logfile": "sample_logs/auth_lab_synthetic.log",
+        "year": 2026,
+        "threshold": 5,
+        "window_seconds": 60,
         "compromises_count": 1,
         "suspicious_ips_count": 2
     },

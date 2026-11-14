@@ -1,0 +1,10 @@
+git rm -r --cached --ignore-unmatch __pycache__ .idea .DS_Store .Rhistory report.json__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+.Rhistory
+/report.json
