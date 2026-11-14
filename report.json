@@ -1,6 +1,6 @@
 {
     "summary": {
-        "logfile": "auth_hydra_attack.log",
+        "logfile": "sample_logs/auth_lab_synthetic.log",
         "compromises_count": 1,
         "suspicious_ips_count": 2
     },
@@ -34,9 +34,17 @@
         }
     ],
     "targeted_users": {
-        "anna": 3,
+        "kamil": 58,
+        "oracle": 17,
+        "admin": 16,
+        "test": 14,
+        "user": 13,
         "root": 12,
-        "unknown": 85,
-        "kamil": 58
+        "postgres": 11,
+        "ubuntu": 6,
+        "ftpuser": 6,
+        "guest": 4,
+        "anna": 3,
+        "pi": 2
     }
 }

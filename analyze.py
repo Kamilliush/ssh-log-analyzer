@@ -3,12 +3,12 @@ import argparse
 import json
 from datetime import datetime
 
-def parseLine(line):
-    match = re.search(r"from (\d+\.\d+\.\d+\.\d+)", line)
-    user_match = re.search(r'for (\S+) from', line)
+def parse_line(line, year):
+    match = re.search(r"from ([0-9a-fA-F\.\:]+)", line)
+    user_match = re.search(r"for (?:invalid user )?(\S+) from", line)
 
     try:
-        timestamp = datetime.strptime("2026 " + line[:15], "%Y %b %d %H:%M:%S")
+        timestamp = datetime.strptime(f"{year} " + line[:15], "%Y %b %d %H:%M:%S")
     except ValueError:
         return None
 
@@ -30,13 +30,13 @@ def parseLine(line):
             })
     return None
 
-def analyze_logs(lines, THRESHOLD, WINDOW = 60):
+def analyze_logs(lines, threshold, window=60, year=datetime.now().year):
     ip_timestamps = {}
     max_window_attempts = {}
     compromises = []
     targeted_users = {}
     for l in lines:
-        parsed = parseLine(l)
+        parsed = parse_line(l, year)
         if not parsed:
             continue
         ip = parsed["ip"]
@@ -48,7 +48,7 @@ def analyze_logs(lines, THRESHOLD, WINDOW = 60):
                 ip_timestamps[ip] = []
             ip_timestamps[ip].append(timestamp)
 
-            ip_timestamps[ip] = [t for t in ip_timestamps[ip] if (timestamp - t).total_seconds() <= WINDOW]
+            ip_timestamps[ip] = [t for t in ip_timestamps[ip] if (timestamp - t).total_seconds() <= window]
 
             targeted_users[user] = targeted_users.get(user, 0) + 1
 
@@ -59,9 +59,9 @@ def analyze_logs(lines, THRESHOLD, WINDOW = 60):
         elif parsed["event"] == "ACCEPTED":
             recent_attempts = [
                 t for t in ip_timestamps.get(ip, [])
-                if (timestamp - t).total_seconds() <= WINDOW
+                if (timestamp - t).total_seconds() <= window
             ]
-            if len(recent_attempts) >= THRESHOLD:
+            if len(recent_attempts) >= threshold:
                 compromises.append({
                     "severity": "HIGH",
                     "type": "POSSIBLE COMPROMISE",
@@ -73,7 +73,7 @@ def analyze_logs(lines, THRESHOLD, WINDOW = 60):
                 })
     suspicious_activity = []
     for ip, count in sorted(max_window_attempts.items(), key=lambda item: item[1], reverse=True):
-        if count >= THRESHOLD:
+        if count >= threshold:
             suspicious_activity.append({
                 "severity": "MEDIUM",
                 "type": "SUSPICIOUS ACTIVITY",
@@ -83,23 +83,25 @@ def analyze_logs(lines, THRESHOLD, WINDOW = 60):
                 "recommended_action": f"sudo ufw deny from {ip}",
             })
 
+    targeted_users = dict(sorted(targeted_users.items(), key=lambda item: item[1], reverse=True))
+
     return compromises, suspicious_activity, targeted_users
 
 def main():
-
     parser = argparse.ArgumentParser(description="SSH log analyzer")
     parser.add_argument("logfile", help="path to the log file")
     parser.add_argument("--threshold", type=int, default=5, help="attempt threshold")
     parser.add_argument("--output", default="report.json", help="report file")
     parser.add_argument("--window", type=int, default=60, help="time window in seconds")
+    parser.add_argument("--year", type=int, default=datetime.now().year, help="year of the logs")
     args = parser.parse_args()
 
-    THRESHOLD = args.threshold
-    WINDOW = args.window
-
+    threshold = args.threshold
+    window = args.window
+    year = args.year
 
     with open(args.logfile) as f:
-        compromises, suspicious_activity, targeted_users = analyze_logs(f, THRESHOLD, WINDOW)
+        compromises, suspicious_activity, targeted_users = analyze_logs(f, threshold, window, year)
         report_data = {
             "summary": {
                 "logfile": args.logfile,
@@ -108,7 +110,7 @@ def main():
             },
             "compromises": compromises,
             "suspicious_activity": suspicious_activity,
-            "targeted_users": targeted_users,  # O TO NOWE!
+            "targeted_users": targeted_users,
         }
     with open(args.output, "w") as out:
         json.dump(report_data, out, indent=4)

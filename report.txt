@@ -1,5 +1,0 @@
-[HIGH] POSSIBLE COMPROMISE [MITRE: T1078 - Valid Accounts]: 192.168.100.20 logged in as 'kamil' after 47 attempts | Recommended action: sudo ufw deny from 192.168.100.20
-
-[MEDIUM] SUSPICIOUS ACTIVITY [MITRE: T1110.001 - Password Guessing]: 192.168.100.31 failed to connect 90 times | Recommended action: sudo ufw deny from 192.168.100.31
-[MEDIUM] SUSPICIOUS ACTIVITY [MITRE: T1110.001 - Password Guessing]: 192.168.100.20 failed to connect 50 times | Recommended action: sudo ufw deny from 192.168.100.20
-[MEDIUM] SUSPICIOUS ACTIVITY [MITRE: T1110.001 - Password Guessing]: 203.0.113.50 failed to connect 14 times | Recommended action: sudo ufw deny from 203.0.113.50
